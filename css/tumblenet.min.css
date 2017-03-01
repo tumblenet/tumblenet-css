@@ -72,7 +72,9 @@ color: #F44336;
 background-color: #F44336;
 }
 
-.tn-text-red
+.tn-text-[color] {
+color: [color]
+}
 
 .tumblegamer-text-color {
 color: #FFC107;
