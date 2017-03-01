@@ -1,4 +1,42 @@
 ---
 layout: main
 ---
-<p class="tn-text-red">red text</p>
+{% for a in (0...12) %}
+{% for b in (0...12) %}
+{% for c in (0...12) %}
+{% for d in (0...12) %}
+{% for e in (0...12) %}
+{% for f in (0...12) %}
+{% for g in (0...12) %}
+{% for h in (0...12) %}
+{% for i in (0...12) %}
+{% for j in (0...12) %}
+{% for k in (0...12) %}
+{% for l in (0...12) %}
+{% assign full_width = a | plus:b | plus:c | plus:d | plus:e | plus:f | plus:g | plus:h | plus:i | plus:j | plus:k | plus:l  %}
+{% if full_with==12 %}
+<p class="tn-col-{{ a }} tn-background-back tn-text-white">{{ a }}</p>
+<p class="tn-col-{{ b }} tn-background-back tn-text-white">{{ b }}</p>
+<p class="tn-col-{{ c }} tn-background-back tn-text-white">{{ c }}</p>
+<p class="tn-col-{{ d }} tn-background-back tn-text-white">{{ d }}</p>
+<p class="tn-col-{{ e }} tn-background-back tn-text-white">{{ e }}</p>
+<p class="tn-col-{{ f }} tn-background-back tn-text-white">{{ f }}</p>
+<p class="tn-col-{{ g }} tn-background-back tn-text-white">{{ g }}</p>
+<p class="tn-col-{{ h }} tn-background-back tn-text-white">{{ h }}</p>
+<p class="tn-col-{{ i }} tn-background-back tn-text-white">{{ i }}</p>
+<p class="tn-col-{{ j }} tn-background-back tn-text-white">{{ j }}</p>
+<p class="tn-col-{{ k }} tn-background-back tn-text-white">{{ k }}</p>
+<p class="tn-col-{{ l }} tn-background-back tn-text-white">{{ l }}</p>
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
