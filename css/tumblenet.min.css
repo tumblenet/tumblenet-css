@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.tn-container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
@@ -52,6 +58,8 @@
     display: table;
 }
 
+
+
 html {
 font-family: 'Roboto', sans-serif;
 }
@@ -93,4 +101,5 @@ color: #9e9e9e;
 background-color: #9e9e9e;
 }
 
+tn-
 
