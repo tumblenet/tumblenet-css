@@ -1,44 +1,18 @@
 ---
 layout: main
 ---
-{% for a in (0..12) %}
-{% for b in (0..12) %}
-{% for c in (0..12) %}
-{% for d in (0..12) %}
-{% for e in (0..12) %}
-{% for f in (0..12) %}
-{% for g in (0..12) %}
-{% for h in (0..12) %}
-{% for i in (0..12) %}
-{% for j in (0..12) %}
-{% for k in (0..12) %}
-{% for l in (0..12) %}
-{% assign full_width = a | plus:b | plus:c | plus:d | plus:e | plus:f | plus:g | plus:h | plus:i | plus:j | plus:k | plus:l %}
-{% if full_with==12 %}
+{% for a in (0..12) %}{% for b in (0..12) %}{% for c in (0..12) %}{% for d in (0..12) %}{% for e in (0..12) %}{% for f in (0..12) %}{% for g in (0..12) %}{% for h in (0..12) %}{% for i in (0..12) %}{% for j in (0..12) %}{% for k in (0..12) %}{% for l in (0..12) %}{% assign full_width = a | plus:b | plus:c | plus:d | plus:e | plus:f | plus:g | plus:h | plus:i | plus:j | plus:k | plus:l %}{% if full_with==12 %}
 <div class="tn-row">
-  <p class="tn-col-{{ a }} tn-background-back tn-text-white">{{ a }}</p>
-  <p class="tn-col-{{ b }} tn-background-back tn-text-white">{{ b }}</p>
-  <p class="tn-col-{{ c }} tn-background-back tn-text-white">{{ c }}</p>
-  <p class="tn-col-{{ d }} tn-background-back tn-text-white">{{ d }}</p>
-  <p class="tn-col-{{ e }} tn-background-back tn-text-white">{{ e }}</p>
-  <p class="tn-col-{{ f }} tn-background-back tn-text-white">{{ f }}</p>
-  <p class="tn-col-{{ g }} tn-background-back tn-text-white">{{ g }}</p>
-  <p class="tn-col-{{ h }} tn-background-back tn-text-white">{{ h }}</p>
-  <p class="tn-col-{{ i }} tn-background-back tn-text-white">{{ i }}</p>
-  <p class="tn-col-{{ j }} tn-background-back tn-text-white">{{ j }}</p>
-  <p class="tn-col-{{ k }} tn-background-back tn-text-white">{{ k }}</p>
-  <p class="tn-col-{{ l }} tn-background-back tn-text-white">{{ l }}</p>
-</div>
-{% endif %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
-{% endfor %}
+  {% if a %}<p class="tn-col-{{ a }} tn-background-back tn-text-white">{{ a }}</p>{% endif %}
+  {% if b %}<p class="tn-col-{{ b }} tn-background-back tn-text-white">{{ b }}</p>{% endif %}
+  {% if c %}<p class="tn-col-{{ c }} tn-background-back tn-text-white">{{ c }}</p>{% endif %}
+  {% if d %}<p class="tn-col-{{ d }} tn-background-back tn-text-white">{{ d }}</p>{% endif %}
+  {% if e %}<p class="tn-col-{{ e }} tn-background-back tn-text-white">{{ e }}</p>{% endif %}
+  {% if f %}<p class="tn-col-{{ f }} tn-background-back tn-text-white">{{ f }}</p>{% endif %}
+  {% if g %}<p class="tn-col-{{ g }} tn-background-back tn-text-white">{{ g }}</p>{% endif %}
+  {% if h %}<p class="tn-col-{{ h }} tn-background-back tn-text-white">{{ h }}</p>{% endif %}
+  {% if i %}<p class="tn-col-{{ i }} tn-background-back tn-text-white">{{ i }}</p>{% endif %}
+  {% if j %}<p class="tn-col-{{ j }} tn-background-back tn-text-white">{{ j }}</p>{% endif %}
+  {% if k %}<p class="tn-col-{{ k }} tn-background-back tn-text-white">{{ k }}</p>{% endif %}
+  {% if l %}<p class="tn-col-{{ l }} tn-background-back tn-text-white">{{ l }}</p>{% endif %}
+</div>{% endif %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}
