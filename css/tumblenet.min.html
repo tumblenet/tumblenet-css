@@ -90,3 +90,11 @@ background-color: #9e9e9e;
 }
 
 
+{% for color in site.colors %}
+.tn-text-{{ color.name }} {
+color: {{ color.value }};
+}
+.tn-background-{{ color.name }} {
+background-color: {{ color.name }};
+}
+{% endfor %}
