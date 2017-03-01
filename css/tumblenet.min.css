@@ -72,10 +72,6 @@ color: #F44336;
 background-color: #F44336;
 }
 
-.tn-text-[color] {
-color: [color]
-}
-
 .tumblegamer-text-color {
 color: #FFC107;
 }
@@ -97,5 +93,12 @@ color: #9e9e9e;
 background-color: #9e9e9e;
 }
 
+
+.tn-text- {
+color: 
+}
+.tn-background- {
+color: 
+}
 
 
