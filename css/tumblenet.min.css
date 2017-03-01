@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
-//Grid System
 * {
   box-sizing: border-box;
 }
-
 
 .tn-container {
 	max-width: 1140px;
@@ -51,7 +49,6 @@
 [class*="tn-col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
 }
 
 .tn-row::after {
@@ -59,7 +56,6 @@
     clear: both;
     display: table;
 }
-
 
 
 html {
