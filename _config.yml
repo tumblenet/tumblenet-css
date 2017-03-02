@@ -27,8 +27,14 @@ colors:
    value: black
  - name: white
    value: white
- - name: inherit
-   value: inherit
+ - name: tumblenet
+   value: #F4336
+ - name: tumblegamer
+   value: #FFC107
+ - name: tumblenethelp
+   value: #03A9F4
+ - name: dbw
+   value: #03A9F4
 
 collections:
 
