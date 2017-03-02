@@ -32,38 +32,30 @@ padding: 0;
          clear:both;
     }
 
-@function grid-width($cols,$allColumns, $has-gutter:false) {
- @if $has-gutter {
-   @return calc(((100% / #{$allColumns}) * #{$cols}) - #{$gutter}); 
- }
- @else {
-   @return calc((100% / #{$allColumns}) * #{$cols});
- }
-}
 
-// MOBILE
+/* MOBILE*/
 [class*="tn-col-"] {
     width: 100%;
 }
-//TABLET
+/*TABLET*/
 @media only screen and (min-width: 600px) {
    {% for a in (1..12) %}
    {% for b in (1..12) %}
    {% unless b>a %}
    .tn-col-tablet-{{ b }}-{{ a }} {
-   width: grid-width({{ b }},{{ a }});
+   width: calc((100%/{{b}})*{{a}});
    }
    {% endunless %}
    {% endfor %}
    {% endfor %}
 }
-//DESKTOP
+/*DESKTOP*/
 @media only screen and (min-width: 768px) {
    {% for a in (1..12) %}
    {% for b in (1..12) %}
    {% unless b>a %}
    .tn-col-{{ b }}-{{ a }} {
-   width: grid-width({{ b }},{{ a }});
+   width: calc((100%/{{b}})*{{a}});
    }
    {% endunless %}
    {% endfor %}
@@ -71,7 +63,7 @@ padding: 0;
 }
 
 
-//global
+/*global*/
 html {
  font-family: 'Roboto', sans-serif;
  }
