@@ -32,6 +32,15 @@ padding: 0;
          clear:both;
     }
 
+@function grid-width($cols,$allColumns, $has-gutter:false) {
+ @if $has-gutter {
+   @return calc(((100% / #{$allColumns}) * #{$cols}) - #{$gutter}); 
+ }
+ @else {
+   @return calc((100% / #{$allColumns}) * #{$cols});
+ }
+}
+
 // MOBILE
 [class*="tn-col-"] {
     width: 100%;
@@ -42,7 +51,7 @@ padding: 0;
    {% for b in (1..12) %}
    {% unless b>a %}
    .tn-col-tablet-{{ b }}-{{ a }} {
-   width: calc((100% / {{ a }}) * {{ b }});
+   width: grid-width({{ b }},{{ a }});
    }
    {% endunless %}
    {% endfor %}
@@ -54,7 +63,7 @@ padding: 0;
    {% for b in (1..12) %}
    {% unless b>a %}
    .tn-col-{{ b }}-{{ a }} {
-   width: calc((100% / {{ a }}) * {{ b }});
+   width: grid-width({{ b }},{{ a }});
    }
    {% endunless %}
    {% endfor %}
