@@ -1,57 +1,18 @@
 ---
 permalink: /css/tumblenet.min.css
 ---
+/* MOBILE: */
 
-html {
-  box-sizing: border-box;
+//TABLET
+@media only screen and (min-width: 600px) {
+
 }
+//DESKTOP
+@media only screen and (min-width: 768px) {
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-.tn-container {
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-{% for i in (1..12) %}
-//{{ i }} COLLUM GRID
-.tn-grid-{{ i }} .tn-grid-item {
-  width: {{ 100 devided_by:i }};
-  float: left;
-}
-.tn-grid-{{ i }}:after {
-  display: table;
-  clear: both;
-  content: '';
-}
-.tn-grid-item:nth-child({{ i }}n+{{ i }}) {
-  margin-right: 0;
-  float: right;
-}
-{% endfor %}
-
-.tn-grid-item {
-  width: calc((100% - 20px * 2) / 3);
-  /* other properties */
-}
-.tn-grid-item:last-child {
-  margin-right: 0;
-  float: right;
-}
-.column {
-  width: calc((100% - 20px * 12) / 12);
-  height: 80px;
-  margin-right: 10px;
-  margin-left: 10px;
-  background: rgba(0, 0, 255, 0.25);
-  float: left;
-}
-
+//global
 html {
  font-family: 'Roboto', sans-serif;
  }
