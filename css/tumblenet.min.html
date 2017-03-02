@@ -113,6 +113,13 @@ html {
  .tn-background-{{ color.name }} {
  background-color: {{ color.name }};
  }
+
+.tn-text-onhover-{{ color.name }}:hover {
+ color: {{ color.value }};
+ }
+ .tn-background-onhover-{{ color.name }}:hover {
+ background-color: {{ color.name }};
+ }
  {% endfor %}
 
 {% for i in (1..3) %}
@@ -147,9 +154,4 @@ background-color: yellow;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-.tn-nav-item a:hover {
-    background-color: #111;
-}
-
 
