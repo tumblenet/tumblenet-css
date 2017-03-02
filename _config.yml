@@ -23,20 +23,20 @@ production: true
 favicon: favicon.gif
 
 colors:
- - name: black
-   value: black
- - name: white
-   value: white
- - name: tumblenet
-   value: #F4336
- - name: tumblegamer
-   value: #FFC107
- - name: tumblenethelp
-   value: #03A9F4
- - name: dbw
-   value: #03A9F4
- - name: dark-red
-   value: #D32F2F
+ - name: "black"
+   value: "black"
+ - name: "white"
+   value: "white"
+ - name: "tumblenet"
+   value: "#F4336"
+ - name: "tumblegamer"
+   value: "#FFC107"
+ - name: "tumblenethelp"
+   value: "#03A9F4"
+ - name: "dbw"
+   value: "#03A9F4"
+ - name: "dark-red"
+   value: "#D32F2F"
 
 collections:
 
