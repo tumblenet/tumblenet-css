@@ -29,7 +29,7 @@ padding: 0;
 {% for b in (1..12) %}
 {% unless b>a %}
 .tn-col-tablet-{{ b }}-{{ a }} {
-width: {{ b | times:100 | divided_by:a }}%;
+width: calc(100%*{{ b }}/{{ a }});
 }
 {% endunless %}
 {% endfor %}
@@ -41,7 +41,7 @@ width: {{ b | times:100 | divided_by:a }}%;
 {% for b in (1..12) %}
 {% unless b>a %}
 .tn-col-{{ b }}-{{ a }} {
-width: {{ b | times:100 | divided_by:a }}%;
+width: calc(100%*{{ b }}/{{ a }});
 }
 {% endunless %}
 {% endfor %}
