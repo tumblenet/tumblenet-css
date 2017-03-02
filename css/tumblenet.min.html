@@ -23,6 +23,13 @@ padding: 0;
 [class*="tn-col-"] {
     width: 100%;
 }
+
+.tn-mobile-hide {
+display: none
+}
+* {
+display: initial
+}
 //TABLET
 {% for a in (1..12) %}
 {% for b in (1..12) %}
@@ -33,6 +40,12 @@ width: calc(100%*{{ b }}/{{ a }});
 {% endunless %}
 {% endfor %}
 {% endfor %}
+.tn-tablet-hide {
+display: none
+}
+* {
+display: initial
+}
 }
 //DESKTOP
 @media only screen and (min-width: 768px) {
@@ -45,6 +58,12 @@ width: calc(100%*{{ b }}/{{ a }});
 {% endunless %}
 {% endfor %}
 {% endfor %}
+.tn-hide {
+display: none
+}
+* {
+display: initial
+}
 }
 
 //global
