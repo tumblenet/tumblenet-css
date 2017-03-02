@@ -70,6 +70,11 @@ display: initial
     padding: 15px;
     border: 1px solid red;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 //global
 html {
