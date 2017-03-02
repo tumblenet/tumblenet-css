@@ -100,4 +100,10 @@ html {
  }
  {% endfor %}
 
+{% for i in (1,2,3) %}
+.tn-text-align-{% cycle 'left','right','center' %} {
+    text-align: {% cycle 'left','right','center' %};
+}
+{% endfor %}
+
 
