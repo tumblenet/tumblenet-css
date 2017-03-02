@@ -1,12 +1,12 @@
 ---
 layout: main
 ---
-{% for a in (0,2..12) %}{% for b in (0,2..12) %}{% for c in (0,2..12) %}{% for d in (0,2..12) %}{% for e in (0,2..12) %}{% for f in (0,2..12) %}{% assign full = full | plus:b %}{% assign full = full | plus:c %}{% assign full = full | plus:d %}{% assign full = full | plus:e %}{% assign full = full | plus:f %}
+
+
+
 <div class="tn-row">
-  {% if a %}<p class="tn-col-{{ a }} tn-background-back tn-text-white">{{ a }}</p>{% endif %}
-  {% if b %}<p class="tn-col-{{ b }} tn-background-back tn-text-white">{{ b }}</p>{% endif %}
-  {% if c %}<p class="tn-col-{{ c }} tn-background-back tn-text-white">{{ c }}</p>{% endif %}
-  {% if d %}<p class="tn-col-{{ d }} tn-background-back tn-text-white">{{ d }}</p>{% endif %}
-  {% if e %}<p class="tn-col-{{ e }} tn-background-back tn-text-white">{{ e }}</p>{% endif %}
-  {% if f %}<p class="tn-col-{{ f }} tn-background-back tn-text-white">{{ f }}</p>{% endif %}
-</div>{% endif %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}{% endfor %}
+{% for i in (0..11) %}
+{{ 12 | minus:i }}
+<p class="tn-col-{{ 12 | minus:i }} tn-background-black tn-text-white">{{ 12 | minus:i }}</p>
+{% endfor %}
+</div>
