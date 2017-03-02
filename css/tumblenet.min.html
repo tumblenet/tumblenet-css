@@ -30,18 +30,18 @@ html {
 }
 
 /* For a 3-column grid */
-.grid-item:nth-child({{ i }}n+{{ i }}) {
+.tn-grid-item:nth-child({{ i }}n+{{ i }}) {
   margin-right: 0;
   float: right;
 }
 
 {% endfor %}
 
-.grid-item {
+.tn-grid-item {
   width: calc((100% - 20px * 2) / 3);
   /* other properties */
 }
-.grid-item:last-child {
+.tn-grid-item:last-child {
   margin-right: 0;
   float: right;
 }
