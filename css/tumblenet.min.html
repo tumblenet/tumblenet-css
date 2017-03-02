@@ -39,13 +39,6 @@ box-sizing: border-box;
 [class*="tn-col-"] {
     width: 100%;
 }
-
-.tn-mobile-hide {
-display: none
-}
-* {
-display: initial
-}
 //TABLET
 @media only screen and (min-width: 600px) {
    {% for a in (1..12) %}
@@ -57,14 +50,6 @@ display: initial
    {% endunless %}
    {% endfor %}
    {% endfor %}
-
-   .tn-tablet-hide {
-   display: none
-   }
-
-   * {
-   display: initial
-   }
 }
 //DESKTOP
 @media only screen and (min-width: 768px) {
@@ -77,14 +62,6 @@ display: initial
    {% endunless %}
    {% endfor %}
    {% endfor %}
-
-   .tn-hide {
-   display: none
-   }
-
-   * {
-   display: initial
-   }
 }
 [class*='tn-col-'] {
         float: left;
