@@ -17,7 +17,23 @@ padding: 0;
  .tn-container {
      width : 100%;
      max-width : 1200px; 
+box-sizing: border-box;
  }
+ [class*='tn-col-'] {
+        float: left;
+        min-height: 1px; 
+    }
+.tn-row:before, 
+    .tn-row:after {
+        content:"";
+        display: table ;
+         clear:both;
+    }
+[class*='tn-col-'] {
+        float: left;
+        min-height: 1px; 
+        width: 16.66%; 
+    }
 
 // MOBILE
 [class*="tn-col-"] {
@@ -31,51 +47,53 @@ display: none
 display: initial
 }
 //TABLET
-{% for a in (1..12) %}
-{% for b in (1..12) %}
-{% unless b>a %}
-.tn-col-tablet-{{ b }}-{{ a }} {
-width: calc(100%*{{ b }}/{{ a }});
-}
-{% endunless %}
-{% endfor %}
-{% endfor %}
-.tn-tablet-hide {
-display: none
-}
-* {
-display: initial
-}
+@media only screen and (min-width: 600px) {
+   {% for a in (1..12) %}
+   {% for b in (1..12) %}
+   {% unless b>a %}
+   .tn-col-tablet-{{ b }}-{{ a }} {
+   width: calc(100%*{{ b }}/{{ a }});
+   }
+   {% endunless %}
+   {% endfor %}
+   {% endfor %}
+
+   .tn-tablet-hide {
+   display: none
+   }
+
+   * {
+   display: initial
+   }
 }
 //DESKTOP
 @media only screen and (min-width: 768px) {
-{% for a in (1..12) %}
-{% for b in (1..12) %}
-{% unless b>a %}
-.tn-col-{{ b }}-{{ a }} {
-width: calc(100%*{{ b }}/{{ a }});
+   {% for a in (1..12) %}
+   {% for b in (1..12) %}
+   {% unless b>a %}
+   .tn-col-{{ b }}-{{ a }} {
+   width: calc(100%*{{ b }}/{{ a }});
+   }
+   {% endunless %}
+   {% endfor %}
+   {% endfor %}
+
+   .tn-hide {
+   display: none
+   }
+
+   * {
+   display: initial
+   }
 }
-{% endunless %}
-{% endfor %}
-{% endfor %}
-.tn-hide {
-display: none
-}
-* {
-display: initial
-}
-}
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-}
-.row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-         clear:both;
+[class*='tn-col-'] {
+        float: left;
+        min-height: 1px; 
+        width: 16.66%; 
+        /*-- our gutter --*/
+        padding: 12px;
     }
+
 
 //global
 html {
