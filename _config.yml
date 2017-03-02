@@ -35,6 +35,8 @@ colors:
    value: #03A9F4
  - name: dbw
    value: #03A9F4
+ - name: dark-red
+   value: #D32F2F
 
 collections:
 
