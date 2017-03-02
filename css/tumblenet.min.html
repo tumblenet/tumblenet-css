@@ -25,7 +25,7 @@ permalink: /css/tumblenet.min.css
 {% for b in (1..12) %}
 {% unless b>a %}
 .tn-col-tablet-{{ b }}-{{ a }} {
-width: {{ b | divided_by:a | times:100 }}%;
+width: {{ b | times:100 | divided_by:a }}%;
 }
 {% endunless %}
 {% endfor %}
