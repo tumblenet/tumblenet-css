@@ -119,6 +119,12 @@ html {
     text-align: {% cycle 'left','right','center' %};
 }
 {% endfor %}
+{% for i in (1..3) %}
+.tn-align-{% cycle 'left','right','center' %} {
+    {% cycle ' text-align: left;',' text-align: right;','margin-right: auto;
+   margin-left: auto;' %};
+}
+{% endfor %}
 
 .tn-col-dev {
 background-color: yellow;
