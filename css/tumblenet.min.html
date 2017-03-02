@@ -22,18 +22,14 @@ padding: 0;
 }
  [class*='tn-col-'] {
         float: left;
-        min-height: 1px; 
+        min-height: 1px;
+        padding: 12px;
     }
 .tn-row:before, 
     .tn-row:after {
         content:"";
         display: table ;
          clear:both;
-    }
-[class*='tn-col-'] {
-        float: left;
-        min-height: 1px; 
-        width: 16.66%; 
     }
 
 // MOBILE
@@ -64,13 +60,6 @@ padding: 0;
    {% endfor %}
    {% endfor %}
 }
-[class*='tn-col-'] {
-        float: left;
-        min-height: 1px; 
-        width: 16.66%; 
-        /*-- our gutter --*/
-        padding: 12px;
-    }
 
 
 //global
