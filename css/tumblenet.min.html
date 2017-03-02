@@ -2,14 +2,12 @@
 permalink: /css/tumblenet.min.css
 ---
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .tn-content {
@@ -80,3 +78,5 @@ html {
  background-color: {{ color.name }};
  }
  {% endfor %}
+
+
