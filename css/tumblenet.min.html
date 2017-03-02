@@ -1,3 +1,74 @@
 ---
 permalink: /css/tumblenet.min.css
 ---
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.tn-container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+{% for i in (1..12) %}
+.tn-grid-{{ i }} .tn-grid-item
+{% endfor %}
+
+html {
+ font-family: 'Roboto', sans-serif;
+ }
+ 
+ h1,h2,h3,h4,h5,h6,h7,h8,h9 {
+ font-family: 'Oswald', sans-serif;
+ }
+ 
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ .tumblenet-text-color {
+ color: #F44336;
+ }
+ .tumblenet-background-color {
+ background-color: #F44336;
+ }
+ 
+ .tumblegamer-text-color {
+ color: #FFC107;
+ }
+ .tumblegamer-background-color {
+ background-color: #FFC107;
+ }
+ 
+ .tumblenethelp-text-color {
+ color: #03A9F4;
+ }
+ .tumblenethelp-background-color {
+ background-color: #03A9F4;
+ }
+ 
+ .dbw-text-color {
+ color: #9e9e9e;
+ }
+ .dbw-background-color {
+ background-color: #9e9e9e;
+ }
+ 
+ 
+ {% for color in site.colors %}
+ .tn-text-{{ color.name }} {
+ color: {{ color.value }};
+ }
+ .tn-background-{{ color.name }} {
+ background-color: {{ color.name }};
+ }
+ {% endfor %}
