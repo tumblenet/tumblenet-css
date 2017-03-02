@@ -19,8 +19,32 @@ html {
 }
 
 {% for i in (1..12) %}
-.tn-grid-{{ i }} .tn-grid-item
+.tn-grid-{{ i }} .tn-grid-item {
+  width: {{ 100 devided_by:i }};
+  float: left;
+}
+.tn-grid-{{ i }}:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+/* For a 3-column grid */
+.grid-item:nth-child({{ i }}n+{{ i }}) {
+  margin-right: 0;
+  float: right;
+}
+
 {% endfor %}
+
+.grid-item {
+  width: calc((100% - 20px * 2) / 3);
+  /* other properties */
+}
+.grid-item:last-child {
+  margin-right: 0;
+  float: right;
+}
 
 html {
  font-family: 'Roboto', sans-serif;
