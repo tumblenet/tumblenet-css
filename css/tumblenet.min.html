@@ -35,22 +35,15 @@ width: {{ i }}%;
 {% endfor %}
 
 
-
 html {
   box-sizing: border-box;
+
 }
 html, body{
   height:100%;
-display: flex;
+   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
 }
 
 .tn-main {
@@ -66,14 +59,6 @@ flex: 1;
 }
 
 
-.tn-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
-}
  [class*='tn-col-'] {
         float: left;
         min-height: 1px;
@@ -126,7 +111,7 @@ html {
  font-family: 'Oswald', sans-serif;
  }
  
- img {
+img {
      max-width: 100%;
      height: auto;
  }
