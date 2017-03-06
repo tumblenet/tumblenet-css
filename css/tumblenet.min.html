@@ -14,9 +14,26 @@ padding: 0;
           box-sizing: border-box;
 }
 
-.tn-spacer {
-height: 92px;
+{% for i in (1..100) %}
+.tn-height-{{ i }} {
+height: {{ i }}px;
 }
+
+.tn-height-{{ i }}-percent {
+height: {{ i }}%;
+}
+{% endfor %}
+
+{% for i in (1..100) %}
+.tn-width-{{ i }} {
+width: {{ i }}px;
+}
+
+.tn-width-{{ i }}-percent {
+width: {{ i }}%;
+}
+{% endfor %}
+
 
 
 html {
