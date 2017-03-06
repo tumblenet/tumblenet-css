@@ -88,7 +88,7 @@ flex: 1;
 
 
 /* MOBILE*/
-[class*="tn-col-"] {
+[class*="tn-col"] {
     width: 100%;
 }
 /*TABLET*/
@@ -98,6 +98,9 @@ flex: 1;
    {% unless b>a %}
    .tn-col-tablet-{{ b }}-{{ a }} {
    width: calc((100%/{{a}})*{{b}});
+   }
+   .tn-row-tablet-{{ b }}-{{ a }} {
+   height: calc((100%/{{a}})*{{b}});
    }
    {% endunless %}
    {% endfor %}
@@ -110,6 +113,9 @@ flex: 1;
    {% unless b>a %}
    .tn-col-{{ b }}-{{ a }} {
    width: calc((100%/{{a}})*{{b}});
+   }
+   .tn-row-{{ b }}-{{ a }} {
+      height: calc((100%/{{a}})*{{b}});
    }
    {% endunless %}
    {% endfor %}
