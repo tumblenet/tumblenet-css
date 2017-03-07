@@ -122,18 +122,22 @@ img {
  }
  
  {% for color in site.colors %}
- .tn-text-{{ color.name }} {
- color: {{ color.value }};
- }
  .tn-background-{{ color.name }} {
  background-color: {{ color.value }};
  }
 
-.tn-text-onhover-{{ color.name }}:hover {
- color: {{ color.value }};
- }
  .tn-background-onhover-{{ color.name }}:hover {
  background-color: {{ color.value }};
+ }
+ {% endfor %}
+
+{% for color in site.colors %}
+ .tn-text-{{ color.name }} {
+ color: {{ color.value }};
+ }
+
+.tn-text-onhover-{{ color.name }}:hover {
+ color: {{ color.value }};
  }
  {% endfor %}
 
