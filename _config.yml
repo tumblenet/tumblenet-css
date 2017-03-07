@@ -63,3 +63,5 @@ excludes:
   - gulffile.js
   - package.json
   - vendor
+
+theme: jekyll-theme-minimal
