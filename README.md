@@ -5,7 +5,7 @@ TODO: Write a project description
 ## Supported Browsers:
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 (Preperatrion to install)
@@ -17,10 +17,8 @@ These instructions will get you a copy of the project up and running on your loc
 See [Travis][travis].
 
 ## Deployment
-Add additional notes about how to deploy this on a live system
 
 ## Built With
-* [Materialize](http://materializecss.com/), a CSS Framework based on material design
 * [Jekyll](http://jekyllrb.com/) -  a simple, blog-aware, static site generator
 * [Travis](https://travis-ci.org) - Used to test build status
 
