@@ -29,7 +29,7 @@ sudo: false # route your build to the container-based infrastructure for a faste
 deploy:
   provider: releases
   api_key:
-    secure: YOUR_API_KEY_ENCRYPTED
+    secure: TnlR9ElyjrUSF8Ifgci3xu38jw+OjxR2lzjLKmmf81O8TUzPNqrti8Xiqb5mdkOktqCAM3A90XXnHPAjT6qArk/RzWWrLGHovVqRBYny7fmPt7BlMQnt7UjJEsK9PyvfJBXQzvQrdowckhaPnHIkwA6gIK6ruqgpb9vOecvnpgSAMXtsCTIpeJKHJTPgv1CDI+5UTheYO7+cP3X7SHKJe8vFCS8zoGSveWF8mTEqeUbUOEdq09hnYq/5O63JCKH9im/CeSdL/f3jz4Mr//hyOwxyjjWvbDrAD0MWxU3a4scKEhxnRFRxDMJjs+LHUJZgVacIEwrSM7KMLnwPJkWgSt1I+lu8aftoqQjjRYXw3ncm3bJ/5baxOk4slhbmWuFwFS0ADTgUGr5ZhkkzO9pNfKwvUrwt7Ic4ECGSTf7i3fn9gmkdfnTo5DmNWpPiZGx8zVpk2LJR/G6YnPq5oV15lxlwfMzgWP9Iv5j538p7G3bel4yHDl8YLLK22Kyw8EU1esRzBZh+avsm2kSegqQjsFc0QwZJW6CDTlRQBYWzYJl91k+6JcTl97qgkdz4+Onx8M54phrCYb75f3B5IMWVQIX82mBNyedqPp4Evf2aauqW8Yg7xVmVh3nk7a8LCyQEO1Rw/7wDmysuSxgVJ5WXbSXNLtHqbBialOeKbeyBXHM=
   file:
     - "./_site/css/tumblenet.min.css"
   skip_cleanup: true
