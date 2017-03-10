@@ -2,12 +2,14 @@
 layout: main
 ---
 
-<div class="tn-row">
+{% for h in (1..12) %}
   {% for i in (1..12) %}
+<div class="tn-row">
   {% for j in (1..i) %}
-  <div class="tn-col-1-{{i}} tn-align-center">
-    <p class="tn-background-tumblenet tn-text-white">1-{{i}}</p>
+  <div class="tn-col-{{h}}-{{i}} tn-align-center">
+    <p class="tn-background-tumblenet tn-text-white">{{h}}-{{i}}</p>
   </div>
   {% endfor %}
+  </div>
   {% endfor %}
-</div>
+
