@@ -7,6 +7,9 @@ tn
 >> -align
 >>> `left`,`right`,`center`
 
+>> -color
+>>> [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)
+
 > -background
 >> -color
 
