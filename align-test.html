@@ -5,7 +5,7 @@ layout: main
 {% for i in (1..3) %}
 {% capture alignment %}{% cycle 'left','right','center' %}{% endcapture %}
 <div class="tn-row">
-<div class="tn-col-1-4">
+<div class="tn-col-1-2">
 <p class="tn-text-align-{{alignment}} tn-background-tumblenet  tn-text-white">
 text-align-{{alignment}}
 </p>
@@ -16,7 +16,7 @@ text-align-{{alignment}}
 {% for i in (1..3) %}
 {% capture alignment %}{% cycle 'left','right','center' %}{% endcapture %}
 <div class="tn-row">
-<div class="tn-col-1-4 tn-align-{{alignment}}">
+<div class="tn-col-1-2 tn-align-{{alignment}}">
 <p class="tn-background-tumblenet tn-text-white">
 align-{{alignment}}
 </p>
