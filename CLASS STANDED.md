@@ -10,16 +10,20 @@ tn
 > -background
 >> -color
 
-
 > -row
->>
+
 > -col
->>> `-[#]-[#]`
+>> `-[#]-[#]`
 >> -tablet
 >>> `-[#]-[#]`
+
 > -container
+
 > -header
+
 > -main
+
 > -footer
+
 > -nav
 >> -item
