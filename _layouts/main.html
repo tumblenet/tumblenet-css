@@ -6,11 +6,9 @@ layout: default
     <h1 class="tn-col-1-3 tn-website-title tn-text-white">{{ site.title }}</h1>
     <nav class="tn-col-2-3">
       <ul class="tn-row tn-nav">
-        <li class="tn-col-1-5 tn-nav-item"><a class="tn-background-onhover-dark-red" href="#">Hello</a></li>
-        <li class="tn-col-1-5 tn-nav-item "><a class="tn-background-onhover-dark-red" href="#">Hello</a></li>
-        <li class="tn-col-1-5 tn-nav-item "><a class="tn-background-onhover-dark-red" href="#">Hello</a></li>
-        <li class="tn-col-1-5 tn-nav-item "><a class="tn-background-onhover-dark-red" href="#">Hello</a></li>
-        <li class="tn-col-1-5 tn-nav-item "><a class="tn-background-onhover-dark-red" href="#">Hello</a></li>
+        {% for item in site.data.nav %}
+        <li class="tn-col-1-5 tn-nav-item"><a class="tn-background-onhover-dark-red" href="{{ item.url">{{ item.name }}</a></li>
+        {% endfor %}
       </ul>
     </nav>
   </div>
