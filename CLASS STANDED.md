@@ -1,30 +1,30 @@
-# tn
-## -element
-### -align
+tn
+> -element
+>> -align
 `left`,`right`,`center`
 
-## -text
-### -align
+> -text
+>> -align
 `left`,`right`,`center`
 
-## -background
-### -color
+> -background
+>> -color
 
 
-## -row
-## -col
+> -row
+> -col
 `-[#]-[#]`
-### -tablet
+>> -tablet
 `-[#]-[#]`
 
 
 
-## -container
+> -container
 
-## -header
-## -main
-## -footer
+> -header
+> -main
+> -footer
 
 
-## -nav
-### -item
+> -nav
+>> -item
