@@ -239,8 +239,9 @@ max-width: {{ i }}%;
 {% endfor %}
 
 {% for i in (1..3) %}
-.tn-text-align-{% cycle 'left','right','center' %} {
-    text-align: {% cycle 'left','right','center' %};
+{% capture alignment %} {% cycle 'left','right','center' %}{% endcapture %}
+.tn-text-align-{{alignment}} {
+    text-align: {{alignment}};
 }
 {% endfor %}
 
