@@ -107,17 +107,17 @@ max-width: {{ i }}%;
 
 
 
-
+[class*='tn-col-']:last-of-type {
+  padding-right: 0;
+}
  [class*="tn-col"] {
         float: left;
         min-height: 1px;
         padding: 12px;
 text-align: center;
+
+  padding-right: 20px;
     }
-[class*="tn-col"] > * {
-margin-right: auto;
-margin-left: auto;
-}
 
 .tn-row:before, 
     .tn-row:after {
