@@ -1,0 +1,14 @@
+---
+layout: main
+---
+{% for a in (1..12) %}
+<div class="tn-row">
+{% for b in (1..12) %}
+{% unless b>a %}
+  <div class="tn-col-{{b}}-{{a}} tn-align-center">
+    <p class="tn-background-tumblenet tn-text-white">{{b}}-{{a}}</p>
+  </div>
+{% endunless %}
+{% endfor %}
+  </div>
+{% endfor %}
