@@ -1,11 +1,11 @@
 tn
 > -element
 >> -align
-`left`,`right`,`center`
+>>> `left`,`right`,`center`
 
 > -text
 >> -align
-`left`,`right`,`center`
+>>> `left`,`right`,`center`
 
 > -background
 >> -color
@@ -13,18 +13,12 @@ tn
 
 > -row
 > -col
-`-[#]-[#]`
+>>> `-[#]-[#]`
 >> -tablet
-`-[#]-[#]`
-
-
-
+>>> `-[#]-[#]`
 > -container
-
 > -header
 > -main
 > -footer
-
-
 > -nav
 >> -item
