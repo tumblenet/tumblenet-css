@@ -58,47 +58,6 @@ max-width: 900px;
 
 
 
-/* CUSTEM SIZES*/
-{% for i in (1..100) %}
-.tn-height-{{ i }} {
-height: {{ i }}px;
-}
-
-.tn-height-{{ i }}-percent {
-height: {{ i }}%;
-}
-{% endfor %}
-
-{% for i in (1..100) %}
-.tn-width-{{ i }} {
-width: {{ i }}px;
-}
-
-.tn-width-{{ i }}-percent {
-width: {{ i }}%;
-}
-{% endfor %}
-
-
-{% for i in (1..100) %}
-.tn-max-height-{{ i }} {
-max-height: {{ i }}px;
-}
-
-.tn-max-height-{{ i }}-percent {
-max-height: {{ i }}%;
-}
-{% endfor %}
-
-{% for i in (1..100) %}
-.tn-max-width-{{ i }} {
-max-width: {{ i }}px;
-}
-
-.tn-max-width-{{ i }}-percent {
-max-width: {{ i }}%;
-}
-{% endfor %}
 
 
 
@@ -200,18 +159,7 @@ img {
 
 
 
-{% for i in (1..3) %}
-.tn-text-align-{% cycle 'left','right','center' %} {
-    text-align: {% cycle 'left','right','center' %};
-}
-{% endfor %}
 
-{% for i in (1..3) %}
-.tn-align-{% cycle 'left','right','center' %} {
-    {% cycle ' float: left;',' float: right;','margin-right: auto;
-   margin-left: auto;' %};
-}
-{% endfor %}
 
 
 
@@ -228,6 +176,8 @@ padding: 0;
 text-align: center;
 }
 
+/*NAV*/
+
 .tn-nav {
     list-style-type: none;
     margin: 0;
@@ -242,3 +192,62 @@ text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
+
+
+/* CUSTEM SIZES*/
+{% for i in (1..100) %}
+.tn-height-{{ i }} {
+height: {{ i }}px;
+}
+
+.tn-height-{{ i }}-percent {
+height: {{ i }}%;
+}
+{% endfor %}
+
+{% for i in (1..100) %}
+.tn-width-{{ i }} {
+width: {{ i }}px;
+}
+
+.tn-width-{{ i }}-percent {
+width: {{ i }}%;
+}
+{% endfor %}
+
+
+{% for i in (1..100) %}
+.tn-max-height-{{ i }} {
+max-height: {{ i }}px;
+}
+
+.tn-max-height-{{ i }}-percent {
+max-height: {{ i }}%;
+}
+{% endfor %}
+
+{% for i in (1..100) %}
+.tn-max-width-{{ i }} {
+max-width: {{ i }}px;
+}
+
+.tn-max-width-{{ i }}-percent {
+max-width: {{ i }}%;
+}
+{% endfor %}
+
+{% for i in (1..3) %}
+.tn-text-align-{% cycle 'left','right','center' %} {
+    text-align: {% cycle 'left','right','center' %};
+}
+{% endfor %}
+
+{% for i in (1..3) %}
+.tn-align-{% cycle 'left','right','center' %} {
+    {% cycle ' float: left;',' float: right;','margin-right: auto;
+   margin-left: auto;' %};
+}
+{% endfor %}
+
