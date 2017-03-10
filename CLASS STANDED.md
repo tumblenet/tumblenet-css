@@ -41,10 +41,18 @@ tn
 >>> -[#]
 >>>> -percent
 
+>> -min
+>>> -[#]
+>>>> -percent
+
 > -width
 >> -[#]
 >>>-percent
 
 >> -max
+>>> -[#]
+>>>> -percent
+
+>> -min
 >>> -[#]
 >>>> -percent
