@@ -31,3 +31,20 @@ tn
 
 > -nav
 >> -item
+
+
+> -height
+>> -[#]
+>>>-percent
+
+>> -max
+>>> -[#]
+>>>> -percent
+
+> -width
+>> -[#]
+>>>-percent
+
+>> -max
+>>> -[#]
+>>>> -percent
