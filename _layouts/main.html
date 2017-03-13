@@ -7,7 +7,7 @@ layout: default
     <nav class="tn-col-2-3">
       <ul class="tn-row tn-nav">
         {% for item in site.data.nav %}
-        <li class="tn-col-1-5 tn-nav-item"><a class="tn-background-color-onhover-dark-red {% if page.url == item.href %}tn-background-color-dark-red{% endif %}" href="{{ site.url }}{{ item.href }}">{{ item.name }}</a></li>
+        <li class="tn-col-1-5 tn-nav-item"><a class="tn-background-color-onhover-dark-red {% if page.url == item.href %}tn-background-color-dark-red{% endif %}" href="{{ site.url }}{{ item.href }}">{{ item.name }}:{{ item.href }}</a></li>
         {% endfor %}
       </ul>
     </nav>
