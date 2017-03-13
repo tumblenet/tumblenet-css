@@ -133,11 +133,11 @@ img {
 
 /*COLORS*/
  {% for color in site.colors %}
- .tn-block-{{ color.name }} {
+ .tn-element-{{ color.name }} {
  background-color: {{ color.value }};
  }
 
- .tn-block-onhover-{{ color.name }}:hover {
+ .tn-element-onhover-{{ color.name }}:hover {
  background-color: {{ color.value }};
  }
  {% endfor %}
