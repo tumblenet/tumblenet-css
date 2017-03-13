@@ -1,11 +1,5 @@
 tn
-> -element
->> -align
->>> `left`,`right`,`center`
-
-
-
-> -text
+> -block
 >> -align
 >>> `left`
 >>> `right`
@@ -15,8 +9,12 @@ tn
 >>> [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)
 
 
+> -text
+>> -align
+>>> `left`
+>>> `right`
+>>> `center`
 
-> -background
 >> -color
 >>> [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)
 
