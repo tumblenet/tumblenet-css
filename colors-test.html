@@ -5,8 +5,8 @@ layout: main
  {% for backC in site.colors %}
 <div class="tn-row tn-background-{{backC.name}}">
  {% for textC in site.colors %}
- <div class="tn-col-1-12 tn-text-{{textC.name}}">
-  <p>Hello</p>
+ <div class="tn-col-1-12 tn-text-color-{{textC.name}}">
+  <p>b:{{backC.name}}-t:{{textC.name}}</p>
   </div>
  {% endfor %}
 </div>
