@@ -12,13 +12,13 @@ tn
 >>> `center`
 
 >> -color
->>> [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)]
+>>> [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)
 
 
 
 > -background
 >> -color
-
+>>> [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)
 
 
 > -row
