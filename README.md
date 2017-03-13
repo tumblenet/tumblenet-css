@@ -23,7 +23,7 @@ TODO: Write a project description
 (Instalation Steps)
 
 ## Running the tests
-See [Travis][travis].
+See [Travis].
 
 ## Deployment
 
