@@ -131,7 +131,7 @@ img {
 
 
 
-
+/*COLORS*/
  {% for color in site.colors %}
  .tn-background-{{ color.name }} {
  background-color: {{ color.value }};
@@ -162,12 +162,6 @@ img {
 
 
 
-
-
-.tn-col-dev {
-background-color: yellow;
-}
-
 .tn-header * {
 padding: 0;
 }
@@ -197,16 +191,7 @@ text-align: center;
 
 
 /* CUSTEM SIZES*/
-{% for i in (1..100) %}
-.tn-height-{{ i }} {
-height: {{ i }}px;
-}
-
-.tn-height-{{ i }}-percent {
-height: {{ i }}%;
-}
-{% endfor %}
-
+/*---WIDTH*/
 {% for i in (1..100) %}
 .tn-width-{{ i }} {
 width: {{ i }}px;
@@ -230,7 +215,7 @@ max-width: {{ i }}%;
 }
 {% endfor %}
 
-
+/*---HEIGHT*/
 {% for i in (1..100) %}
 .tn-height-{{ i }} {
 height: {{ i }}px;
