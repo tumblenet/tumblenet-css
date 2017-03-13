@@ -1,5 +1,5 @@
 tn
-> -block
+> -element
 >> -align
 >>> `left`
 >>> `right`
