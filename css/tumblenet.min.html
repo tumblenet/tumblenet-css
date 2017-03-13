@@ -144,11 +144,11 @@ img {
 
 
 {% for color in site.colors %}
- .tn-text-{{ color.name }} {
+ .tn-text-color-{{ color.name }} {
  color: {{ color.value }};
  }
 
-.tn-text-onhover-{{ color.name }}:hover {
+.tn-text-color-onhover-{{ color.name }}:hover {
  color: {{ color.value }};
  }
  {% endfor %}
@@ -212,31 +212,48 @@ height: {{ i }}%;
 width: {{ i }}px;
 }
 
+.tn-width-max-{{ i }} {
+max-width: {{ i }}px;
+}
+.tn-width-min-{{ i }} {
+min-width: {{ i }}px;
+}
+
 .tn-width-{{ i }}-percent {
 width: {{ i }}%;
+}
+.tn-width-min-{{ i }}-percent {
+min-width: {{ i }}%;
+}
+.tn-width-max-{{ i }}-percent {
+max-width: {{ i }}%;
 }
 {% endfor %}
 
 
 {% for i in (1..100) %}
-.tn-max-height-{{ i }} {
-max-height: {{ i }}px;
+.tn-height-{{ i }} {
+height: {{ i }}px;
 }
 
-.tn-max-height-{{ i }}-percent {
+.tn-height-max-{{ i }} {
+max-height: {{ i }}px;
+}
+.tn-height-min-{{ i }} {
+min-height: {{ i }}px;
+}
+
+.tn-height-{{ i }}-percent {
+height: {{ i }}%;
+}
+.tn-height-min-{{ i }}-percent {
+min-height: {{ i }}%;
+}
+.tn-height-max-{{ i }}-percent {
 max-height: {{ i }}%;
 }
 {% endfor %}
 
-{% for i in (1..100) %}
-.tn-max-width-{{ i }} {
-max-width: {{ i }}px;
-}
-
-.tn-max-width-{{ i }}-percent {
-max-width: {{ i }}%;
-}
-{% endfor %}
 
 {% for i in (1..3) %}
 {% capture alignment %}{% cycle 'left','right','center' %}{% endcapture %}
@@ -246,7 +263,7 @@ max-width: {{ i }}%;
 {% endfor %}
 
 {% for i in (1..3) %}
-.tn-align-{% cycle 'left','right','center' %} {
+.tn-element-align-{% cycle 'left','right','center' %} {
     {% cycle ' float: left;',' float: right;','margin-right: auto;
    margin-left: auto;
 float: none;' %};
