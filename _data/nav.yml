@@ -1,5 +1,5 @@
 - name: "Home"
-  href: ""
+  href: "/"
 - name: "Colors Test"
   href: "/colors-test/"
 - name: "Align Test"
