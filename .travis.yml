@@ -35,7 +35,8 @@ deploy:
     tags: true
 deploy:
   provider: releases
-  api_key: "$GITHUBOAUTHTOKEN"
+  user: $USERNAME
+  password: $PASSWORD
   file: "_site/css/tumblenet.min.css"
   skip_cleanup: true
   on:
