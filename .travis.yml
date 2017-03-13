@@ -33,3 +33,11 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "_site/css/tumblenet.min.css"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
