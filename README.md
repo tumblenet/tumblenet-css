@@ -29,8 +29,8 @@ See [Travis].
 
 ## Built With
 * [Jekyll](http://jekyllrb.com/) -  a simple, blog-aware, static site generator
-* [Travis](https://travis-ci.org) - Used to test build status
-
+* [Travis] - Used to test build status
+[Travis]: https://travis-ci.org
 ## Contributing
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
