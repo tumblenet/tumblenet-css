@@ -7,7 +7,7 @@ layout: main
 <div class="tn-row">
   {% for j in (1..i) %}
   <div class="tn-col-1-{{i}}">
-    <p class="tn-background-tumblenet tn-text-color-white">1-{{i}}</p>
+    <p class="tn-element-tumblenet tn-text-color-white">1-{{i}}</p>
   </div>
   {% endfor %}
 </div>
@@ -19,7 +19,7 @@ layout: main
 {% for b in (1..12) %}
 {% unless b>a %}
   <div class="tn-col-{{b}}-{{a}}">
-    <p class="tn-background-tumblenet tn-text-color-white">{{b}}-{{a}}</p>
+    <p class="tn-element-tumblenet tn-text-color-white">{{b}}-{{a}}</p>
   </div>
 {% endunless %}
 {% endfor %}
