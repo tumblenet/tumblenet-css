@@ -7,7 +7,9 @@ tn
 
 > -text
 >> -align
->>> `left`,`right`,`center`
+>>> `left`
+>>> `right`
+>>> `center`
 
 >> -color
 >>> [[Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)]
@@ -30,11 +32,11 @@ tn
 
 
 
-> -container
+> -[container](https://github.com/tumblenet/tumblenet-css/wiki/Container)
 
 
 
-> -header
+> -[header](https://github.com/tumblenet/tumblenet-css/wiki/Header)
 
 
 
@@ -53,30 +55,35 @@ tn
 
 > -height
 >> -[#]
->>>-percent
+>>>-[*]percent
 
 
 >> -max
 >>> -[#]
->>>> -percent
+>>>> -[*]percent
 
 
 >> -min
 >>> -[#]
->>>> -percent
+>>>> -[*]percent
 
 
 
 > -width
 >> -[#]
->>>-percent
+>>>-[*]percent
 
 
 >> -max
 >>> -[#]
->>>> -percent
+>>>> -[*]percent
 
 
 >> -min
 >>> -[#]
->>>> -percent
+>>>> -[*]percent
+
+
+
+
+[*]: https://github.com/tumblenet/tumblenet-css/wiki/wiki-key#asterisk
