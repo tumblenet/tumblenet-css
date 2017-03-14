@@ -23,7 +23,7 @@ production: true
 favicon: favicon.gif
 
 colors:
- - name: "Tumble Network
+ - name: "Tumble Network"
    - name: "tumblenet"
      value: "#F44336"
    - name: "tumblegamer"
