@@ -32,8 +32,10 @@ colors:
  - name: "dbw"
    value: "#9E9E9E"
 
+#taken from http://www.htmlhexcolor.com/f44336
+
  - name: "dark-red"
-   value: "#D32F2F"
+   value: "#D2190b"
    
  - name: "red"
    value: ""
