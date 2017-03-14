@@ -38,10 +38,11 @@ colors:
    value: "#36f443"
  - name: "blue"
    value: "#4336f4"
- - name: "black"
-   value: "black"
+ 
  - name: "white"
    value: "white"
+ - name: "black"
+   value: "black"
 
 
 
