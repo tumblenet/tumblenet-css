@@ -136,18 +136,16 @@ img {
 /*{{ colorG.name }}*/
 /*-ELEMENT COLORING*/
  {% for color in colorG.colors %}
-/*{{ colorG.name }}*/
+/*{{ color.name }}*/
  .tn-element-color-{{ color.name }} {
  background-color: {{ color.value }};
  }
-
  .tn-element-color-onhover-{{ color.name }}:hover {
  background-color: {{ color.value }};
  }
 
-
-
  {% endfor %}
+
 
 /*-ELEMENT COLORING*/
 {% for color in colorG.colors %}#
@@ -155,11 +153,14 @@ img {
  .tn-text-color-{{ color.name }} {
  color: {{ color.value }};
  }
-
 .tn-text-color-onhover-{{ color.name }}:hover {
  color: {{ color.value }};
  }
+
  {% endfor %}
+
+
+
 {% endfor %}
 
 
