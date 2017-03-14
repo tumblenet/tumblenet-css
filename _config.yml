@@ -37,6 +37,10 @@ colors:
    value: "#9E9E9E"
  - name: "dark-red"
    value: "#D32F2F"
+ - name: "blue"
+   value: "#4336f4"
+ - name: "green"
+   value: "#36f443"
 
 collections:
 
