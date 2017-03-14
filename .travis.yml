@@ -47,5 +47,5 @@ deploy:
   file: "_site/css/tumblenet.min.css"
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
     all_branches: true
