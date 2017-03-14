@@ -6,7 +6,7 @@ layout: main
     <th>
     </th>
    {% for textC in site.colors %}
-   <th class="tn-text-color-{{textC.name}}">
+   <th class="{% unless textC.name == 'white' %}tn-text-color-{{textC.name}}{% endunless %}">
     {{textC.name}}
    </th>
    {% endfor %}
@@ -14,7 +14,7 @@ layout: main
 
   {% for backC in site.colors %}
   <tr>
-    <td class="tn-text-color-{{backC.name}}">
+    <td class="{% unless backC.name == 'white' %}tn-element-color-{{backC.name}}{% endunless %}">
       {{backC.name}}
     </td>
    {% for textC in site.colors %}
