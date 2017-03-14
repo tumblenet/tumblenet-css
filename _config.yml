@@ -27,13 +27,13 @@ colors:
    value: "#F44336"
  - name: "tumblegamer"
    value: "#FFC107"
- - name: "dark-red"
-   value: "#D32F2F"
  - name: "tumblenethelp"
    value: "#03A9F4"
  - name: "dbw"
    value: "#9E9E9E"
-   
+
+ - name: "dark-red"
+   value: "#D32F2F"
  - name: "green"
    value: "#36f443"
  - name: "blue"
