@@ -132,7 +132,7 @@ img {
 
 
 /*COLORS*/
- {% for color in site.colors %}
+ {% for color in site.data.colors %}
  .tn-element-color-{{ color.name }} {
  background-color: {{ color.value }};
  }
@@ -143,7 +143,7 @@ img {
  {% endfor %}
 
 
-{% for color in site.colors %}
+{% for color in site.data.colors %}
  .tn-text-color-{{ color.name }} {
  color: {{ color.value }};
  }
