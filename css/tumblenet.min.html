@@ -133,7 +133,10 @@ img {
 
 /*COLORS*/
  {% for colorG in site.data.colors %}
+/*{{ colorG.name }}*/
+/*-ELEMENT COLORING*/
  {% for color in colorG.colors %}
+/*{{ colorG.name }}*/
  .tn-element-color-{{ color.name }} {
  background-color: {{ color.value }};
  }
@@ -141,10 +144,14 @@ img {
  .tn-element-color-onhover-{{ color.name }}:hover {
  background-color: {{ color.value }};
  }
+
+
+
  {% endfor %}
 
-
-{% for color in colorG.colors %}
+/*-ELEMENT COLORING*/
+{% for color in colorG.colors %}#
+/*{{ color.name }}*/
  .tn-text-color-{{ color.name }} {
  color: {{ color.value }};
  }
