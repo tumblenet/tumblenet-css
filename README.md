@@ -8,12 +8,12 @@ TODO: Write a project description
 [![GitHub tag](https://img.shields.io/github/release/tumblenet/tumblenet-css.svg?style=flat-square&label=Latest Stable Version)](https://github.com/tumblenet/tumblenet-css/releases/latest)
 
 # Quick Links
-* [Getting Started](Getting Started)
-* [List of pages](Catagories)
-* [Grid](Grid)
-* [Colors](Colors)
-* [Selectors](Selectors)
-* [Class-hierarchy](Class-hierarchy)
+* [Getting Started](https://github.com/tumblenet/tumblenet-css/wiki/Getting Started)
+* [List of pages](https://github.com/tumblenet/tumblenet-css/wiki/Catagories)
+* [Grid](https://github.com/tumblenet/tumblenet-css/wiki/Grid)
+* [Colors](https://github.com/tumblenet/tumblenet-css/wiki/Colors)
+* [Selectors](https://github.com/tumblenet/tumblenet-css/wiki/Selectors)
+* [Class-hierarchy](https://github.com/tumblenet/tumblenet-css/wiki/Class-hierarchy)
 
 
 ### Prerequisites
