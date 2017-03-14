@@ -34,10 +34,13 @@ colors:
 
  - name: "dark-red"
    value: "#D32F2F"
+   
+ - name: "red"
+ - name: "orange"
+ - name: "yellow"
  - name: "green"
-   value: "#36f443"
  - name: "blue"
-   value: "#4336f4"
+ - name: "purple"
  
  - name: "white"
    value: "white"
