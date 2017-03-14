@@ -7,19 +7,19 @@ layout: main
   <tr>
     <th>
     </th>
-   {% for textC in colorG %}
+   {% for textC in colorG.colors %}
    <th class="{% unless textC.name == 'white' %}tn-text-color-{{textC.name}}{% endunless %}">
     {{textC.name}}
    </th>
    {% endfor %}
   </tr>
 
-  {% for backC in colorG %}
+  {% for backC in colorG.colors %}
   <tr>
     <td class="{% unless backC.name == 'white' %}tn-text-color-{{backC.name}}{% endunless %}">
       {{backC.name}}
     </td>
-   {% for textC in colorG %}
+   {% for textC in colorG.colors %}
    <td class="tn-element-color-{{backC.name}} tn-text-color-{{textC.name}}">
     Hello
    </td>
