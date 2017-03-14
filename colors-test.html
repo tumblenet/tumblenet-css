@@ -14,7 +14,7 @@ layout: main
 
   {% for backC in site.colors %}
   <tr>
-    <td class="{% unless backC.name == 'black' %}tn-element-color-{{backC.name}}{% endunless %}">
+    <td class="{% unless backC.name == 'white' %}tn-text-color-{{backC.name}}{% endunless %}">
       {{backC.name}}
     </td>
    {% for textC in site.colors %}
