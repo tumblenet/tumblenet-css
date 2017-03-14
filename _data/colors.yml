@@ -1,4 +1,5 @@
  - name: "Tumble Network"
+   colors:
    - name: "tumblenet"
      value: "#F44336"
    - name: "tumblegamer"
@@ -9,7 +10,8 @@
      value: "#9E9E9E"
 
 #taken from http://www.htmlhexcolor.com/f44336
- - name: "Main"  
+ - name: "Main"
+   colors:
    - name: "red"
      value: "#F44336"
    - name: "orange"
@@ -36,6 +38,7 @@
      value: "#f43688"
  
  - name: "Monochrome"
+   colors:
    - name: "white"
      value: "white"
    - name: "black"
