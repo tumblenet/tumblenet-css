@@ -1,26 +1,25 @@
 ---
 layout: main
 ---
-<div class="tn-row">
-  <div class="tn-col-1-12">
-  <p></p>
-  </div>
+<tr>
+  <th>
+  </th>
  {% for textC in site.colors %}
- <div class="tn-col-1-12 tn-text-color-{{textC.name}}">
+ <th class="tn-text-color-{{textC.name}}">
   <p>{{textC.name}}</p>
-  </div>
+  </th>
  {% endfor %}
-</div>
+</tr>
 
  {% for backC in site.colors %}
-<div class="tn-row">
-  <div class="tn-col-1-12 tn-text-color-{{backC.name}}">
+<tr>
+  <th class="tn-text-color-{{backC.name}}">
   <p>{{backC.name}}</p>
-  </div>
+  </th>
  {% for textC in site.colors %}
- <div class="tn-col-1-12 tn-element-color-{{backC.name}} tn-text-color-{{textC.name}}">
+ <th class="tn-element-color-{{backC.name}} tn-text-color-{{textC.name}}">
   <p>Hello</p>
-  </div>
+  </th>
  {% endfor %}
-</div>
+<tr>
  {% endfor %}
