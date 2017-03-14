@@ -6,20 +6,20 @@ layout: main
   </th>
  {% for textC in site.colors %}
  <th class="tn-text-color-{{textC.name}}">
-  <p>{{textC.name}}</p>
-  </th>
+  {{textC.name}}
+ </th>
  {% endfor %}
 </tr>
 
- {% for backC in site.colors %}
+{% for backC in site.colors %}
 <tr>
   <th class="tn-text-color-{{backC.name}}">
-  <p>{{backC.name}}</p>
+    {{backC.name}}
   </th>
  {% for textC in site.colors %}
  <th class="tn-element-color-{{backC.name}} tn-text-color-{{textC.name}}">
-  <p>Hello</p>
-  </th>
+  Hello
+ </th>
  {% endfor %}
 <tr>
- {% endfor %}
+{% endfor %}
