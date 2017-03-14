@@ -1,23 +1,25 @@
 ---
 layout: main
 ---
+{% for colorG in site.colors %}
+<h1>{{ colorG.name }}</h1>
 <table>
   <tr>
     <th>
     </th>
-   {% for textC in site.colors %}
+   {% for textC in colorG %}
    <th class="{% unless textC.name == 'white' %}tn-text-color-{{textC.name}}{% endunless %}">
     {{textC.name}}
    </th>
    {% endfor %}
   </tr>
 
-  {% for backC in site.colors %}
+  {% for backC in colorG %}
   <tr>
     <td class="{% unless backC.name == 'white' %}tn-text-color-{{backC.name}}{% endunless %}">
       {{backC.name}}
     </td>
-   {% for textC in site.colors %}
+   {% for textC in colorG %}
    <td class="tn-element-color-{{backC.name}} tn-text-color-{{textC.name}}">
     Hello
    </td>
@@ -25,3 +27,4 @@ layout: main
   </tr>
   {% endfor %}
 </table>
+{% endfor %}
