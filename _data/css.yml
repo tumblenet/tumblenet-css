@@ -16,6 +16,7 @@ colors:
      dark: yes
    - name: "tumblenethelp"
      value: "#03A9F4"
+     dark: yes
    - name: "dbw"
      value: "#9E9E9E"
      dark: yes
