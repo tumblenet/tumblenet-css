@@ -17,16 +17,40 @@ colors:
      value: "#9E9E9E"
 
 #taken from http://www.htmlhexcolor.com/f44336
- - name: "Main"
+ - name: "Red"
    colors:
+   - name: "red-dark4"
+     value: "#BA160A"
+   - name: "red-dark3"
+     value: "#D2190B"
+   - name: "red-dark2"
+     value: "#EA1C0D"
+   - name: "red-dark1"
+     value: "#f32c1e"
    - name: "red"
      value: "#F44336"
+   - name: "red-light1"
+     value: "#f55a4e"
+   - name: "red-light2"
+     value: "#f77066"
+   - name: "red-light3"
+     value: "#F8877f"
+   - name: "red-light4"
+     value: "#F99d97"
+ - name: "Orange"
+   colors:
    - name: "orange"
      value: "#F4A236"
+ - name: "Orange"
+   colors:
    - name: "yellow"
      value: "#E7F436"
+ - name: "Red"
+   colors:
    - name: "lime"
      value: "#88f436"
+ - name: "Red"
+   colors:
    - name: "green"
      value: "#36f443"
 #      - name: ""
@@ -35,14 +59,24 @@ colors:
      value: "#36e7f4"
 #      - name: ""
 #        value: "#3688f4"
+ - name: "Orange"
+   colors:
    - name: "blue"
      value: "#4336f4"
+ - name: "Red"
+   colors:
    - name: "purple"
      value: "#a236f4"
+ - name: "Red"
+   colors:
    - name: "pink"
      value: "#f436e7"
+ - name: "Red"
+   colors:
    - name: "magenta"
      value: "#f43688"
+     
+     
 
  - name: "Monochrome"
    colors:
