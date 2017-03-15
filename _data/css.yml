@@ -79,8 +79,8 @@ colors:
    - name: "blue"
      value: "#4336f4"
  - name: "Purple"
-   colors:
    main: 4
+   colors:
    - name: "purple"
      value: "#a236f4"
  - name: "Pink"
