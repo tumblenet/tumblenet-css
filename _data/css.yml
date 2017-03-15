@@ -41,8 +41,10 @@ colors:
      dark: yes
    - name: "red-light1"
      value: "#f55a4e"
+     dark: yes
    - name: "red-light2"
      value: "#f77066"
+     dark: yes
    - name: "red-light3"
      value: "#F8877f"
    - name: "red-light4"
@@ -50,8 +52,26 @@ colors:
  - name: "Orange"
    main: 4
    colors:
+   - name: "orange-dark4"
+     value: "#BA6E0A"
+     dark: yes
+   - name: "orange-dark3"
+     value: "#D27C0B"
+     dark: yes
+   - name: "orange-dark2"
+     value: "#EA8B0D"
+   - name: "orange-dark1"
+     value: "#F3971E"
    - name: "orange"
      value: "#F4A236"
+   - name: "orange-light1"
+     value: "#F5AD4E"
+   - name: "orange-light2"
+     value: "#F7B866"
+   - name: "orange-light3"
+     value: "#F8C47F"
+   - name: "orange-light4"
+     value: "#F9CF97"
  - name: "Yellow"
    main: 4
    colors:
