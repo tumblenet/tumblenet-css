@@ -3,7 +3,7 @@ layout: main
 ---
 
 
-  {% for i in (1..12) %}
+  {% for i in (1..site.data.css.max.col) %}
 <div class="tn-row">
   {% for j in (1..i) %}
   <div class="tn-col-1-{{i}}">
@@ -14,9 +14,9 @@ layout: main
   {% endfor %}
 
 
-{% for a in (1..12) %}
+{% for a in (1..site.data.css.max.col) %}
 <div class="tn-row">
-{% for b in (1..12) %}
+{% for b in (1..site.data.css.max.col) %}
 {% unless b>a %}
   <div class="tn-col-{{b}}-{{a}}">
     <p class="tn-element-color-tumblenet tn-text-color-white">{{b}}-{{a}}</p>
