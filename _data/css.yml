@@ -13,7 +13,6 @@ colors:
      dark: yes
    - name: "tumblegamer"
      value: "#FFC107"
-     dark: yes
    - name: "tumblenethelp"
      value: "#03A9F4"
      dark: yes
