@@ -77,7 +77,6 @@ colors:
    colors:
    - name: "yellow-dark4"
      value: "#AEBA0A"
-     dark: yes
    - name: "yellow-dark3"
      value: "#C4D20B"
    - name: "yellow-dark2"
