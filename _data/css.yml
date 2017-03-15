@@ -75,8 +75,25 @@ colors:
  - name: "Yellow"
    main: 4
    colors:
+   - name: "yellow-dark4"
+     value: "#AEBA0A"
+     dark: yes
+   - name: "yellow-dark3"
+     value: "#C4D20B"
+   - name: "yellow-dark2"
+     value: "#DBEA0D"
+   - name: "yellow-dark1"
+     value: "#e4f31e"
    - name: "yellow"
      value: "#E7F436"
+   - name: "yellow-light1"
+     value: "#Eadf54e"
+   - name: "yellow-light2"
+     value: "#edf766"
+   - name: "yellow-light3"
+     value: "#f0f87f"
+   - name: "yellow-light4"
+     value: "#f3f997"
  - name: "Lime"
    main: 4
    colors:
