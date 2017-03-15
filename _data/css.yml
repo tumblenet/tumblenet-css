@@ -6,6 +6,7 @@ max:
 
 colors:
  - name: "Tumble Network"
+   main: 0
    colors:
    - name: "tumblenet"
      value: "#F44336"
@@ -18,17 +19,23 @@ colors:
 
 #taken from http://www.htmlhexcolor.com/f44336
  - name: "Red"
+   main: 5
    colors:
    - name: "red-dark4"
      value: "#BA160A"
+     dark: yes
    - name: "red-dark3"
      value: "#D2190B"
+     dark: yes
    - name: "red-dark2"
      value: "#EA1C0D"
+     dark: yes
    - name: "red-dark1"
      value: "#f32c1e"
+     dark: yes
    - name: "red"
      value: "#F44336"
+     dark: yes
    - name: "red-light1"
      value: "#f55a4e"
    - name: "red-light2"
@@ -41,7 +48,7 @@ colors:
    colors:
    - name: "orange"
      value: "#F4A236"
- - name: "Orange"
+ - name: "Yellow"
    colors:
    - name: "yellow"
      value: "#E7F436"
