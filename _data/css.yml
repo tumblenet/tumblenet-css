@@ -10,12 +10,15 @@ colors:
    colors:
    - name: "tumblenet"
      value: "#F44336"
+     dark: yes
    - name: "tumblegamer"
      value: "#FFC107"
+     dark: yes
    - name: "tumblenethelp"
      value: "#03A9F4"
    - name: "dbw"
      value: "#9E9E9E"
+     dark: yes
 
 #taken from http://www.htmlhexcolor.com/f44336
  - name: "Red"
