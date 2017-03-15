@@ -157,14 +157,12 @@ img {
  }
 
  {% endfor %}
-
-
-
 {% endfor %}
 
-{% for red in (1..255 %}
-{% for blue in (1..255 %}
-{% for green in (1..255 %}
+/*RED-GREEN-BLUE*/
+{% for red in (1..255) %}
+{% for blue in (1..255) %}
+{% for green in (1..255) %}
 /*{{red}}-{{green}}-{{blue}}}*/
  .tn-element-color-rgb-{{red}}-{{green}}-{{blue}} {
  background-color: rgb({{red}},{{green}},{{blue}});
@@ -184,9 +182,9 @@ img {
 {% endfor %}
 
 /*HUE-SAT-LUM*/
-{% for hue in (1..100 %}
-{% for sat in (1..100 %}
-{% for lum in (1..100 %}
+{% for hue in (1..100) %}
+{% for sat in (1..100) %}
+{% for lum in (1..100) %}
 /*{{hue}}-{{sat}}-{{lum}}*/
  .tn-element-color-hsl-{{hue}}-{{sat}}-{{lum}} {
  background-color: hsl({{hue}}%,{{sat}}%,{{lum}}%);
