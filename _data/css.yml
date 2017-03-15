@@ -105,3 +105,4 @@ colors:
      value: "white"
    - name: "black"
      value: "black"
+     dark: yes
