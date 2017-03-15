@@ -19,7 +19,7 @@ colors:
 
 #taken from http://www.htmlhexcolor.com/f44336
  - name: "Red"
-   main: 5
+   main: 4
    colors:
    - name: "red-dark4"
      value: "#BA160A"
@@ -45,40 +45,51 @@ colors:
    - name: "red-light4"
      value: "#F99d97"
  - name: "Orange"
+   main: 4
    colors:
    - name: "orange"
      value: "#F4A236"
  - name: "Yellow"
+   main: 4
    colors:
    - name: "yellow"
      value: "#E7F436"
- - name: "Red"
+ - name: "Lime"
+   main: 4
    colors:
    - name: "lime"
      value: "#88f436"
- - name: "Red"
+ - name: "Green"
+   main: 4
    colors:
    - name: "green"
      value: "#36f443"
 #      - name: ""
 #        value: "#36f4a2"
+ - name: "Cyan"
+   main: 4
+   colors:
    - name: "cyan"
      value: "#36e7f4"
 #      - name: ""
 #        value: "#3688f4"
- - name: "Orange"
+ - name: "Blue"
+   main: 4
    colors:
    - name: "blue"
      value: "#4336f4"
- - name: "Red"
+ - name: "Purple"
    colors:
+   main: 4
    - name: "purple"
      value: "#a236f4"
- - name: "Red"
+ - name: "Pink"
+   main: 4
    colors:
    - name: "pink"
      value: "#f436e7"
- - name: "Red"
+ - name: "Magenta"
+   main: 4
    colors:
    - name: "magenta"
      value: "#f43688"
