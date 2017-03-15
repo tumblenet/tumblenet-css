@@ -2,7 +2,7 @@ max:
  height: 100
  width: 100
  z: 100
- col: 12
+ col: 100
 
 colors:
  - name: "Tumble Network"
