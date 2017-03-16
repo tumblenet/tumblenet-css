@@ -141,12 +141,16 @@ img {
  background-color: {{ color.value }};
 {% if color.dark %}
  color: white;
+{% else %}
+color: black;
 {% endif %}
  }
  .tn-element-color-onhover-{{ color.name }}:hover {
  background-color: {{ color.value }};
 {% if color.dark %}
  color: white;
+{% else %}
+color: black;
 {% endif %}
  }
 
