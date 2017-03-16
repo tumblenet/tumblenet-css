@@ -256,8 +256,27 @@ colors:
 - name: Magenta
   main: 4
   colors:
+  - name: magenta-dark2
+    value: "#ea0d6c"
+    dark: true
+  - name: magenta-dark1
+    value: "#f31e7a"
+    dark: true
   - name: magenta
-    value: "#f43688"
+    value: "#f33688"
+    dark: true
+  - name: magenta-light1
+    value: "#f54e96"
+    dark: true
+  - name: magenta-light2
+    value: "#f766a5"
+    dark: true
+  - name: magenta-light3
+    value: "#f87fb3"
+    dark: false
+  - name: magenta-light4
+    value: "#f997c1"
+    dark: false
 - name: Grey
   colors:
   - name: black
