@@ -200,7 +200,23 @@ colors:
  - name: "Purple"
    main: 4
    colors:
+   - name: "purple-dark4"
+     value: "#a236f4"
+   - name: "purple-dark3"
+     value: "#a236f4"
+   - name: "purple-dark2"
+     value: "#a236f4"
+   - name: "purple-dark1"
+     value: "#a236f4"
    - name: "purple"
+     value: "#a236f4"
+   - name: "purple-light1"
+     value: "#a236f4"
+   - name: "purple-light2"
+     value: "#a236f4"
+   - name: "purple-light3"
+     value: "#a236f4"
+   - name: "purple-light4"
      value: "#a236f4"
  - name: "Pink"
    main: 4
