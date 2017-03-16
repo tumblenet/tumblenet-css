@@ -201,23 +201,30 @@ colors:
    main: 4
    colors:
    - name: "purple-dark4"
-     value: "#a236f4"
+     value: "#6e0aba"
+     dark: yes
    - name: "purple-dark3"
-     value: "#a236f4"
+     value: "#7c0bd2"
+     dark: yes
    - name: "purple-dark2"
-     value: "#a236f4"
+     value: "#8b0dea"
+     dark: yes
    - name: "purple-dark1"
-     value: "#a236f4"
+     value: "#971ef3"
+     dark: yes
    - name: "purple"
      value: "#a236f4"
+     dark: yes
    - name: "purple-light1"
-     value: "#a236f4"
+     value: "#ad4ef5"
+     dark: yes
    - name: "purple-light2"
-     value: "#a236f4"
+     value: "#b866f7"
+     dark: yes
    - name: "purple-light3"
-     value: "#a236f4"
+     value: "#c47ff8"
    - name: "purple-light4"
-     value: "#a236f4"
+     value: "#cf97f9"
  - name: "Pink"
    main: 4
    colors:
