@@ -270,10 +270,10 @@ colors:
   main: 4
   colors:
   - name: magenta-dark4
-    value: "#f43688"
+    value: "#ba0a56"
     dark: true
   - name: magenta-dark3
-    value: "#f44691"
+    value: "#d20b61"
     dark: true
   - name: magenta-dark2
     value: "#ea0d6c"
