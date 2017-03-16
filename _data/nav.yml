@@ -1,8 +1,9 @@
-- name: "Home"
+---
+- name: Home
   href: "/"
-- name: "Colors Test"
-  href: "/colors-test/"
-- name: "Align Test"
-  href: "/align-test/"
-- name: "Grid Test"
+- name: Grid Test
   href: "/grid-test/"
+- name: Align Test
+  href: "/align-test/"
+- name: Colors Test
+  href: "/colors-test/"
