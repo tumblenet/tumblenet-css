@@ -240,7 +240,7 @@ colors:
     dark: true
   - name: grey-dark4
     value: 1a1a1a
-    dark: false
+    dark: true
   - name: grey-dark3
     value: 333333
     dark: false
