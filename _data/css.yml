@@ -137,8 +137,18 @@ colors:
 - name: SpringGreen
   main: 4
   colors:
-  - name: springGreen
-    value: "#36f4a2"
+  - name: springGreen-light1
+    value: "#4ef5ad"
+    dark: false
+  - name: springGreen-light2
+    value: "#66f7b8"
+    dark: false
+  - name: springGreen-light3
+    value: "#7ff8c4"
+    dark: false
+  - name: springGreen-light4
+    value: "#97f9cf"
+    dark: false
 - name: Cyan
   main: 4
   colors:
