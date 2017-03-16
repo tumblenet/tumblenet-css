@@ -239,31 +239,31 @@ colors:
     value: black
     dark: true
   - name: grey-dark4
-    value: 1a1a1a
+    value: "#1a1a1a"
     dark: true
   - name: grey-dark3
-    value: 333333
-    dark: false
+    value: "#333333"
+    dark: true
   - name: grey-dark2
-    value: 4c4c4c
-    dark: false
+    value: "#4c4c4c"
+    dark: true
   - name: grey-dark1
-    value: 666666
-    dark: false
+    value: "#666666"
+    dark: true
   - name: grey
-    value: 808080
-    dark: false
+    value: "#808080"
+    dark: true
   - name: grey-light1
-    value: 999999
+    value: "#999999"
     dark: false
   - name: grey-light2
-    value: b2b2b2
+    value: "#b2b2b2"
     dark: false
   - name: grey-light3
-    value: cccccc
+    value: "#cccccc"
     dark: false
   - name: grey-light4
-    value: e6e6e6
+    value: "#e6e6e6"
     dark: false
   - name: white
     value: white
