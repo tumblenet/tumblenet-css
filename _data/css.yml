@@ -256,6 +256,12 @@ colors:
 - name: Magenta
   main: 4
   colors:
+  - name: magenta-dark4
+    value: "#f43688"
+    dark: true
+  - name: magenta-dark3
+    value: "#f44691"
+    dark: true
   - name: magenta-dark2
     value: "#ea0d6c"
     dark: true
