@@ -5,6 +5,12 @@ max:
   z: 100
   col: 12
 colors:
+- name: Nice colour
+  main: ''
+  colors:
+  - name: nice
+    value: '020305'
+    dark: 'yes'
 - name: Tumble Network
   main: 0
   colors:
