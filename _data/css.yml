@@ -136,8 +136,11 @@ colors:
      value: "#7ff887"
    - name: "green-light4"
      value: "#97f99d"
-#      - name: ""
-#        value: "#36f4a2"
+ - name: "SpringGreen"
+   main: 4
+   colors:
+   - name: "springGreen"
+     value: "#36f4a2"
  - name: "Cyan"
    main: 4
    colors:
@@ -160,8 +163,11 @@ colors:
      value: "#7ff0f8"
    - name: "cyan-light4"
      value: "#97f3f9"
-#      - name: ""
-#        value: "#3688f4"
+ - name: "Azure"
+   main: 4
+   colors:
+   - name: "azure"
+     value: "#3688f4"
  - name: "Blue"
    main: 4
    colors:
