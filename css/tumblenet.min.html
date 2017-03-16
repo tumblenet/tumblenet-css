@@ -139,9 +139,15 @@ img {
 /*{{ color.name }}*/
  .tn-element-color-{{ color.name }} {
  background-color: {{ color.value }};
+{% if color.dark %}
+ color: white;
+{% endif %}
  }
  .tn-element-color-onhover-{{ color.name }}:hover {
  background-color: {{ color.value }};
+{% if color.dark %}
+ color: white;
+{% endif %}
  }
 
  {% endfor %}
