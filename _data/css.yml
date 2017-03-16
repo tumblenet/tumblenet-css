@@ -1,247 +1,270 @@
+---
 max:
- height: 100
- width: 100
- z: 100
- col: 12
-
+  height: 100
+  width: 100
+  z: 100
+  col: 12
 colors:
- - name: "Tumble Network"
-   main: 0
-   colors:
-   - name: "tumblenet"
-     value: "#F44336"
-     dark: yes
-   - name: "tumblegamer"
-     value: "#FFC107"
-   - name: "tumblenethelp"
-     value: "#03A9F4"
-     dark: yes
-   - name: "dbw"
-     value: "#9E9E9E"
-     dark: yes
-
-#taken from http://www.htmlhexcolor.com/f44336
- - name: "Red"
-   main: 4
-   colors:
-   - name: "red-dark4"
-     value: "#BA160A"
-     dark: yes
-   - name: "red-dark3"
-     value: "#D2190B"
-     dark: yes
-   - name: "red-dark2"
-     value: "#EA1C0D"
-     dark: yes
-   - name: "red-dark1"
-     value: "#f32c1e"
-     dark: yes
-   - name: "red"
-     value: "#F44336"
-     dark: yes
-   - name: "red-light1"
-     value: "#f55a4e"
-     dark: yes
-   - name: "red-light2"
-     value: "#f77066"
-     dark: yes
-   - name: "red-light3"
-     value: "#F8877f"
-   - name: "red-light4"
-     value: "#F99d97"
- - name: "Orange"
-   main: 4
-   colors:
-   - name: "orange-dark4"
-     value: "#BA6E0A"
-     dark: yes
-   - name: "orange-dark3"
-     value: "#D27C0B"
-     dark: yes
-   - name: "orange-dark2"
-     value: "#EA8B0D"
-   - name: "orange-dark1"
-     value: "#F3971E"
-   - name: "orange"
-     value: "#F4A236"
-   - name: "orange-light1"
-     value: "#F5AD4E"
-   - name: "orange-light2"
-     value: "#F7B866"
-   - name: "orange-light3"
-     value: "#F8C47F"
-   - name: "orange-light4"
-     value: "#F9CF97"
- - name: "Yellow"
-   main: 4
-   colors:
-   - name: "yellow-dark4"
-     value: "#AEBA0A"
-   - name: "yellow-dark3"
-     value: "#C4D20B"
-   - name: "yellow-dark2"
-     value: "#DBEA0D"
-   - name: "yellow-dark1"
-     value: "#e4f31e"
-   - name: "yellow"
-     value: "#E7F436"
-   - name: "yellow-light1"
-     value: "#Eaf54e"
-   - name: "yellow-light2"
-     value: "#edf766"
-   - name: "yellow-light3"
-     value: "#f0f87f"
-   - name: "yellow-light4"
-     value: "#f3f997"
- - name: "Lime"
-   main: 4
-   colors:
-   - name: "lime-dark4"
-     value: "#56ba0a"
-   - name: "lime-dark3"
-     value: "#61d20b"
-   - name: "lime-dark2"
-     value: "#6cea0d"
-   - name: "lime-dark1"
-     value: "#7af31e"
-   - name: "lime"
-     value: "#88f436"
-   - name: "lime-light1"
-     value: "#96f54e"
-   - name: "lime-light2"
-     value: "#a5f766"
-   - name: "lime-light3"
-     value: "#b3f87f"
-   - name: "lime-light4"
-     value: "#c1f997"
- - name: "Green"
-   main: 4
-   colors:
-   - name: "green-dark4"
-     value: "#0aba16"
-     dark: yes
-   - name: "green-dark3"
-     value: "#0bd219"
-   - name: "green-dark2"
-     value: "#0dea1c"
-   - name: "green-dark1"
-     value: "#1ef32c"
-   - name: "green"
-     value: "#36f443"
-   - name: "green-light1"
-     value: "#4ef55a"
-   - name: "green-light2"
-     value: "#66f770"
-   - name: "green-light3"
-     value: "#7ff887"
-   - name: "green-light4"
-     value: "#97f99d"
- - name: "SpringGreen"
-   main: 4
-   colors:
-   - name: "springGreen"
-     value: "#36f4a2"
- - name: "Cyan"
-   main: 4
-   colors:
-   - name: "cyan-dark4"
-     value: "#0aaeba"
-     dark: yes
-   - name: "cyan-dark3"
-     value: "#0bc4d2"
-   - name: "cyan-dark2"
-     value: "#0ddbea"
-   - name: "cyan-dark1"
-     value: "#1ee4f3"
-   - name: "cyan"
-     value: "#36e7f4"
-   - name: "cyan-light1"
-     value: "#4eeaf5"
-   - name: "cyan-light2"
-     value: "#66edf7"
-   - name: "cyan-light3"
-     value: "#7ff0f8"
-   - name: "cyan-light4"
-     value: "#97f3f9"
- - name: "Azure"
-   main: 4
-   colors:
-   - name: "azure"
-     value: "#3688f4"
- - name: "Blue"
-   main: 4
-   colors:
-   - name: "blue-dark4"
-     value: "#160aba"
-     dark: yes
-   - name: "blue-dark3"
-     value: "#190bd2"
-     dark: yes
-   - name: "blue-dark2"
-     value: "#1c0dea"
-     dark: yes
-   - name: "blue-dark1"
-     value: "#2c1ef3"
-     dark: yes
-   - name: "blue"
-     value: "#4336f4"
-     dark: yes
-   - name: "blue-light1"
-     value: "#5a4ef5"
-     dark: yes
-   - name: "blue-light2"
-     value: "#7066f7"
-     dark: yes
-   - name: "blue-light3"
-     value: "#877ff8"
-     dark: yes
-   - name: "blue-light4"
-     value: "#9d97f9"
- - name: "Purple"
-   main: 4
-   colors:
-   - name: "purple-dark4"
-     value: "#6e0aba"
-     dark: yes
-   - name: "purple-dark3"
-     value: "#7c0bd2"
-     dark: yes
-   - name: "purple-dark2"
-     value: "#8b0dea"
-     dark: yes
-   - name: "purple-dark1"
-     value: "#971ef3"
-     dark: yes
-   - name: "purple"
-     value: "#a236f4"
-     dark: yes
-   - name: "purple-light1"
-     value: "#ad4ef5"
-     dark: yes
-   - name: "purple-light2"
-     value: "#b866f7"
-     dark: yes
-   - name: "purple-light3"
-     value: "#c47ff8"
-   - name: "purple-light4"
-     value: "#cf97f9"
- - name: "Pink"
-   main: 4
-   colors:
-   - name: "pink"
-     value: "#f436e7"
- - name: "Magenta"
-   main: 4
-   colors:
-   - name: "magenta"
-     value: "#f43688"
-     
-     
-
- - name: "Monochrome"
-   colors:
-   - name: "white"
-     value: "white"
-   - name: "black"
-     value: "black"
-     dark: yes
+- name: Tumble Network
+  main: 0
+  colors:
+  - name: tumblenet
+    value: "#F44336"
+    dark: true
+  - name: tumblegamer
+    value: "#FFC107"
+  - name: tumblenethelp
+    value: "#03A9F4"
+    dark: true
+  - name: dbw
+    value: "#9E9E9E"
+    dark: true
+- name: Red
+  main: 4
+  colors:
+  - name: red-dark4
+    value: "#BA160A"
+    dark: true
+  - name: red-dark3
+    value: "#D2190B"
+    dark: true
+  - name: red-dark2
+    value: "#EA1C0D"
+    dark: true
+  - name: red-dark1
+    value: "#f32c1e"
+    dark: true
+  - name: red
+    value: "#F44336"
+    dark: true
+  - name: red-light1
+    value: "#f55a4e"
+    dark: true
+  - name: red-light2
+    value: "#f77066"
+    dark: true
+  - name: red-light3
+    value: "#F8877f"
+  - name: red-light4
+    value: "#F99d97"
+- name: Orange
+  main: 4
+  colors:
+  - name: orange-dark4
+    value: "#BA6E0A"
+    dark: true
+  - name: orange-dark3
+    value: "#D27C0B"
+    dark: true
+  - name: orange-dark2
+    value: "#EA8B0D"
+  - name: orange-dark1
+    value: "#F3971E"
+  - name: orange
+    value: "#F4A236"
+  - name: orange-light1
+    value: "#F5AD4E"
+  - name: orange-light2
+    value: "#F7B866"
+  - name: orange-light3
+    value: "#F8C47F"
+  - name: orange-light4
+    value: "#F9CF97"
+- name: Yellow
+  main: 4
+  colors:
+  - name: yellow-dark4
+    value: "#AEBA0A"
+  - name: yellow-dark3
+    value: "#C4D20B"
+  - name: yellow-dark2
+    value: "#DBEA0D"
+  - name: yellow-dark1
+    value: "#e4f31e"
+  - name: yellow
+    value: "#E7F436"
+  - name: yellow-light1
+    value: "#Eaf54e"
+  - name: yellow-light2
+    value: "#edf766"
+  - name: yellow-light3
+    value: "#f0f87f"
+  - name: yellow-light4
+    value: "#f3f997"
+- name: Lime
+  main: 4
+  colors:
+  - name: lime-dark4
+    value: "#56ba0a"
+  - name: lime-dark3
+    value: "#61d20b"
+  - name: lime-dark2
+    value: "#6cea0d"
+  - name: lime-dark1
+    value: "#7af31e"
+  - name: lime
+    value: "#88f436"
+  - name: lime-light1
+    value: "#96f54e"
+  - name: lime-light2
+    value: "#a5f766"
+  - name: lime-light3
+    value: "#b3f87f"
+  - name: lime-light4
+    value: "#c1f997"
+- name: Green
+  main: 4
+  colors:
+  - name: green-dark4
+    value: "#0aba16"
+    dark: true
+  - name: green-dark3
+    value: "#0bd219"
+  - name: green-dark2
+    value: "#0dea1c"
+  - name: green-dark1
+    value: "#1ef32c"
+  - name: green
+    value: "#36f443"
+  - name: green-light1
+    value: "#4ef55a"
+  - name: green-light2
+    value: "#66f770"
+  - name: green-light3
+    value: "#7ff887"
+  - name: green-light4
+    value: "#97f99d"
+- name: SpringGreen
+  main: 4
+  colors:
+  - name: springGreen
+    value: "#36f4a2"
+- name: Cyan
+  main: 4
+  colors:
+  - name: cyan-dark4
+    value: "#0aaeba"
+    dark: true
+  - name: cyan-dark3
+    value: "#0bc4d2"
+  - name: cyan-dark2
+    value: "#0ddbea"
+  - name: cyan-dark1
+    value: "#1ee4f3"
+  - name: cyan
+    value: "#36e7f4"
+  - name: cyan-light1
+    value: "#4eeaf5"
+  - name: cyan-light2
+    value: "#66edf7"
+  - name: cyan-light3
+    value: "#7ff0f8"
+  - name: cyan-light4
+    value: "#97f3f9"
+- name: Azure
+  main: 4
+  colors:
+  - name: azure
+    value: "#3688f4"
+- name: Blue
+  main: 4
+  colors:
+  - name: blue-dark4
+    value: "#160aba"
+    dark: true
+  - name: blue-dark3
+    value: "#190bd2"
+    dark: true
+  - name: blue-dark2
+    value: "#1c0dea"
+    dark: true
+  - name: blue-dark1
+    value: "#2c1ef3"
+    dark: true
+  - name: blue
+    value: "#4336f4"
+    dark: true
+  - name: blue-light1
+    value: "#5a4ef5"
+    dark: true
+  - name: blue-light2
+    value: "#7066f7"
+    dark: true
+  - name: blue-light3
+    value: "#877ff8"
+    dark: true
+  - name: blue-light4
+    value: "#9d97f9"
+- name: Purple
+  main: 4
+  colors:
+  - name: purple-dark4
+    value: "#6e0aba"
+    dark: true
+  - name: purple-dark3
+    value: "#7c0bd2"
+    dark: true
+  - name: purple-dark2
+    value: "#8b0dea"
+    dark: true
+  - name: purple-dark1
+    value: "#971ef3"
+    dark: true
+  - name: purple
+    value: "#a236f4"
+    dark: true
+  - name: purple-light1
+    value: "#ad4ef5"
+    dark: true
+  - name: purple-light2
+    value: "#b866f7"
+    dark: true
+  - name: purple-light3
+    value: "#c47ff8"
+  - name: purple-light4
+    value: "#cf97f9"
+- name: Pink
+  main: 4
+  colors:
+  - name: pink
+    value: "#f436e7"
+- name: Magenta
+  main: 4
+  colors:
+  - name: magenta
+    value: "#f43688"
+- name: Grey
+  colors:
+  - name: black
+    value: black
+    dark: true
+  - name: grey-dark4
+    value: 1a1a1a
+    dark: false
+  - name: grey-dark3
+    value: 333333
+    dark: false
+  - name: grey-dark2
+    value: 4c4c4c
+    dark: false
+  - name: grey-dark1
+    value: 666666
+    dark: false
+  - name: grey
+    value: 808080
+    dark: false
+  - name: grey-light1
+    value: 999999
+    dark: false
+  - name: grey-light2
+    value: b2b2b2
+    dark: false
+  - name: grey-light3
+    value: cccccc
+    dark: false
+  - name: grey-light4
+    value: e6e6e6
+    dark: false
+  - name: white
+    value: white
+  main: 5
