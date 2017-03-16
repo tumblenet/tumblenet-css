@@ -226,8 +226,33 @@ colors:
 - name: Pink
   main: 4
   colors:
+  - name: pink-dark4
+    value: "#ba0aae"
+    dark: true
+  - name: pink-dark3
+    value: "#d20bc4"
+    dark: true
+  - name: pink-dark2
+    value: "#ea0ddb"
+    dark: true
+  - name: pink-dark1
+    value: "#f31ee4"
+    dark: true
   - name: pink
     value: "#f436e7"
+    dark: true
+  - name: pink-light1
+    value: "#f54eea"
+    dark: true
+  - name: pink-light2
+    value: "#f766ed"
+    dark: true
+  - name: pink-light3
+    value: "#f87ff0"
+    dark: false
+  - name: pink-light4
+    value: "#f997f3"
+    dark: false
 - name: Magenta
   main: 4
   colors:
