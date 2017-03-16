@@ -9,7 +9,7 @@ colors:
   main: ''
   colors:
   - name: nice
-    value: '020305'
+    value: "#020305"
     dark: 'yes'
 - name: Tumble Network
   main: 0
