@@ -137,6 +137,9 @@ colors:
 - name: SpringGreen
   main: 4
   colors:
+  - name: springGreen
+    value: "#36f4a2"
+    dark: true
   - name: springGreen-light1
     value: "#4ef5ad"
     dark: false
