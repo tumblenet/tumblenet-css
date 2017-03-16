@@ -96,8 +96,24 @@ colors:
  - name: "Lime"
    main: 4
    colors:
+   - name: "lime-dark4"
+     value: "#56ba0a"
+   - name: "lime-dark3"
+     value: "#61d20b"
+   - name: "lime-dark2"
+     value: "#6cea0d"
+   - name: "lime-dark1"
+     value: "#7af31e"
    - name: "lime"
      value: "#88f436"
+   - name: "lime-light1"
+     value: "#96f54e"
+   - name: "lime-light2"
+     value: "#a5f766"
+   - name: "lime-light3"
+     value: "#b3f87f"
+   - name: "lime-light4"
+     value: "#c1f997"
  - name: "Green"
    main: 4
    colors:
