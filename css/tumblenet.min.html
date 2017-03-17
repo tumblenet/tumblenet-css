@@ -81,6 +81,26 @@ max-width: 900px;
          clear:both;
     }
 
+/*NAV*/
+
+.tn-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-content: stretch;
+flex-direction: column;
+}
+
+.tn-nav-item a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+flex-grow: 10;
+}
+
 
 /* MOBILE*/
 [class*="tn-col"] {
@@ -97,6 +117,10 @@ max-width: 900px;
    {% endunless %}
    {% endfor %}
    {% endfor %}
+
+   .tn-nav {
+   flex-direction: row;
+   }
 }
 /*DESKTOP*/
 @media only screen and (min-width: 768px) {
@@ -180,21 +204,6 @@ padding: 0;
 text-align: center;
 }
 
-/*NAV*/
-
-.tn-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.tn-nav-item a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
 
 
