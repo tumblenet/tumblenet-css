@@ -10,7 +10,7 @@ colors:
   colors:
   - name: nice
     value: "#020305"
-    dark: 'yes'
+    dark: 'true'
 - name: Tumble Network
   main: 0
   colors:
