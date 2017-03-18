@@ -1,4 +1,4 @@
-tn
+tnface
 > -element
 >> -align
 >>> `left`
