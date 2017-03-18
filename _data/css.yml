@@ -143,9 +143,18 @@ colors:
 - name: SpringGreen
   main: 4
   colors:
+  - name: springGreen-dark4
+    value: "#0aba6e"
+    dark: true
+  - name: springGreen-dark3
+    value: "#0bd27c"
+  - name: springGreen-dark2
+    value: "#0dea8b"
+  - name: springGreen-dark1
+    value: "#1ef397"
   - name: springGreen
     value: "#36f4a2"
-    dark: true
+    dark: false
   - name: springGreen-light1
     value: "#4ef5ad"
     dark: false
@@ -183,8 +192,30 @@ colors:
 - name: Azure
   main: 4
   colors:
+  - name: azure-dark4
+    value: "#0a56ba"
+    dark: true
+  - name: azure-dark3
+    value: "#0b61d2"
+    dark: true
+  - name: azure-dark2
+    value: "#0d6cea"
+    dark: true
+  - name: azure-dark1
+    value: "#1e7af3"
+    dark: true
   - name: azure
     value: "#3688f4"
+    dark: true
+  - name: azure-light1
+    value: "#4e96f5"
+    dark: true
+  - name: azure-light2
+    value: "#66a5f7"
+  - name: azure-light3
+    value: "#7fb3f8"
+  - name: azure-light4
+    value: "#97c1f9"
 - name: Blue
   main: 4
   colors:
