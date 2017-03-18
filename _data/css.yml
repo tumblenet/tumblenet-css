@@ -192,6 +192,9 @@ colors:
 - name: Azure
   main: 4
   colors:
+  - name: azure-dark4
+    value: "#0a56ba"
+    dark: true
   - name: azure
     value: "#3688f4"
 - name: Blue
