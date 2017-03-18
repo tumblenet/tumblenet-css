@@ -214,6 +214,8 @@ colors:
     value: "#66a5f7"
   - name: azure-light3
     value: "#7fb3f8"
+  - name: azure-light4
+    value: "#97c1f9"
 - name: Blue
   main: 4
   colors:
