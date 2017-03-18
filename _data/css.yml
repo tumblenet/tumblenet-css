@@ -206,6 +206,7 @@ colors:
     dark: true
   - name: azure
     value: "#3688f4"
+    dark: true
 - name: Blue
   main: 4
   colors:
