@@ -148,6 +148,8 @@ colors:
     dark: true
   - name: springGreen-dark3
     value: "#0bd27c"
+  - name: springGreen-dark2
+    value: "#0dea8b"
   - name: springGreen
     value: "#36f4a2"
     dark: false
