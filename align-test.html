@@ -2,7 +2,7 @@
 layout: page
 title: Align Test
 ---
-
+<h2>Text Align</h2>
 {% for i in (1..3) %}
 {% capture alignment %}{% cycle 'left','right','center' %}{% endcapture %}
 <div class="tn-row">
@@ -14,6 +14,7 @@ text-align-{{alignment}}
 </div>
 {% endfor %}
 
+<h2>Element Align</h2>
 {% for i in (1..3) %}
 {% capture alignment %}{% cycle 'left','right','center' %}{% endcapture %}
 <div class="tn-row">
@@ -24,3 +25,6 @@ element-align-{{alignment}}
 </div>
 </div>
 {% endfor %}
+
+<h2>Virtical Align</h2>
+<p>Coming soon</p>
