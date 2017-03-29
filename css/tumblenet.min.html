@@ -2,14 +2,14 @@
 permalink: /css/tumblenet.min.css
 ---
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
-* {
+.tn * {
 margin: 0;
-padding: 0; 
+padding: 0;
 color: inherit;
 }
- *,
- *:before,
- *:after {
+ .tn *,
+ .tn *:before,
+ .tn *:after {
    -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,11 +22,11 @@ color: inherit;
 
 
 
-html {
+html.tn {
   box-sizing: border-box;
 
 }
-html, body {
+html.tn, tn  body {
   height: 100%;
    display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ max-width: 900px;
       text-align: center;
  }
 
-.tn-row:before, 
+.tn-row:before,
     .tn-row:after {
         content:"";
         display: table ;
@@ -145,19 +145,19 @@ max-width: 900px;
 
 
 /*global*/
-html {
+html.tn {
  font-family: 'Roboto', sans-serif;
  }
- 
- h1,h2,h3,h4,h5,h6,h7,h8,h9 {
+
+ .tn h1,.tn h2,.tn h3,.tn h4,.tn h5,.tn h6,.tn h7,.tn h8,.tn h9 {
  font-family: 'Oswald', sans-serif;
  }
- 
-img {
+
+.tn img {
      max-width: 100%;
      height: auto;
  }
- 
+
 
 
 
@@ -300,10 +300,17 @@ float: none;' %};
 }
 
 .tn-page-header {
+  font-size: 1.225em;
     padding: 15px;
 }
 .tn-separator {
 height:1px;
 background:#717171;
 border-bottom:1px solid #313030;
+}
+
+.tn-page-body h1, .tn-page-body h2, .tn-page-body h3, .tn-page-body h4, .tn-page-body h5 {
+  padding-top: 25px;
+padding-bottom: 5px;
+border-bottom: 1px solid #313030;
 }
