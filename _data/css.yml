@@ -39,8 +39,8 @@ color-palletes:
   css-name: "main"
   colors:
   - name: Red
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: red-dark4
       value: "#BA160A"
       dark: true
@@ -67,8 +67,8 @@ color-palletes:
     - name: red-light4
       value: "#F99d97"
   - name: Orange
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: orange-dark4
       value: "#BA6E0A"
       dark: true
@@ -90,8 +90,8 @@ color-palletes:
     - name: orange-light4
       value: "#F9CF97"
   - name: Yellow
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: yellow-dark4
       value: "#AEBA0A"
     - name: yellow-dark3
@@ -111,8 +111,8 @@ color-palletes:
     - name: yellow-light4
       value: "#f3f997"
   - name: Lime
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: lime-dark4
       value: "#56ba0a"
     - name: lime-dark3
@@ -132,8 +132,8 @@ color-palletes:
     - name: lime-light4
       value: "#c1f997"
   - name: Green
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: green-dark4
       value: "#0aba16"
       dark: true
@@ -154,8 +154,8 @@ color-palletes:
     - name: green-light4
       value: "#97f99d"
   - name: SpringGreen
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: springGreen-dark4
       value: "#0aba6e"
       dark: true
@@ -181,8 +181,8 @@ color-palletes:
       value: "#97f9cf"
       dark: false
   - name: Cyan
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: cyan-dark4
       value: "#0aaeba"
       dark: true
@@ -203,8 +203,8 @@ color-palletes:
     - name: cyan-light4
       value: "#97f3f9"
   - name: Azure
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: azure-dark4
       value: "#0a56ba"
       dark: true
@@ -230,8 +230,8 @@ color-palletes:
     - name: azure-light4
       value: "#97c1f9"
   - name: Blue
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: blue-dark4
       value: "#160aba"
       dark: true
@@ -259,8 +259,8 @@ color-palletes:
     - name: blue-light4
       value: "#9d97f9"
   - name: Purple
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: purple-dark4
       value: "#6e0aba"
       dark: true
@@ -287,8 +287,8 @@ color-palletes:
     - name: purple-light4
       value: "#cf97f9"
   - name: Pink
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: pink-dark4
       value: "#ba0aae"
       dark: true
@@ -317,8 +317,8 @@ color-palletes:
       value: "#f997f3"
       dark: false
   - name: Magenta
-    main: 4
-    colors:
+    index: 4
+    types:
     - name: magenta-dark4
       value: "#ba0a56"
       dark: true
@@ -347,7 +347,7 @@ color-palletes:
       value: "#f997c1"
       dark: false
   - name: Grey
-    colors:
+    types:
     - name: black
       value: black
       dark: true
@@ -380,4 +380,4 @@ color-palletes:
       dark: false
     - name: white
       value: white
-    main: 5
+    index: 5
