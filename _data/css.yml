@@ -4,25 +4,35 @@ max:
   width: 100
   z: 100
   col: 12
-colors:
-- name: Nice colour
-  main: ''
+
+
+
+color-pallets:
+- name: "DBW picks"
+  css-name: dbwPicks
   colors:
-  - name: nice
+  - name: "Nice colour"
+    css-name: nice
     value: "#020305"
     dark: true
+
+
 - name: Tumble Network
-  main: 0
+  css-name: tn
   colors:
-  - name: tumblenet
+  - name: "Tumble Network"
+    css-name: tumblenet
     value: "#F44336"
     dark: true
-  - name: tumblegamer
+  - name: "TumbleGamer"
+    css-name: tumblegamer
     value: "#FFC107"
-  - name: tumblenethelp
+  - name: "TumbleNet Help"
+    css-name: tumblenethelp
     value: "#03A9F4"
     dark: true
-  - name: dbw
+  - name: "Doctor Batman Who"
+    css-name: dbw
     value: "#9E9E9E"
     dark: true
 - name: Red
