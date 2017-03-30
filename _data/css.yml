@@ -17,7 +17,7 @@ color-pallets:
     dark: true
 
 
-- name: Tumble Network
+- name: "Tumble Network"
   css-name: tn
   colors:
   - name: "Tumble Network"
