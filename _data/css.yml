@@ -111,7 +111,7 @@ color-palletes:
     - name: light4
       value: "#f3f997"
   - name: Lime
-  - css-name: lime
+    css-name: lime
     value: "#88f436"
     index: 4
     types:
@@ -347,7 +347,7 @@ color-palletes:
       value: "#f997c1"
       dark: false
   - name: Grey
-  - css-name: grey
+    css-name: grey
     value: "#808080"
     dark: true
     index: 4
