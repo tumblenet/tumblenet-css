@@ -165,9 +165,10 @@ html.tn {
 /*COLOR: {{ color.name }}*/
 /*-ELEMENT COLORING*/
 {% for type in color.types %}
+
 {% if forloop.index0 == color.index %}
 /*{{ color.name }}*/
-.tn-element-color-{{ color.name }} {
+.tn-element-color-{{ pallet.name }}-{{ color.name }} {
 background-color: {{ color.value }};
 {% if color.dark %}
 color: white;
@@ -175,7 +176,7 @@ color: white;
 color: black;
 {% endif %}
 }
-.tn-element-color-onhover-{{ color.name }}-{{ type.name }}:hover {
+.tn-element-color-onhover-{{ pallet.name }}-{{ color.name }}:hover {
 background-color: {{ type.value }};
 {% if type.dark %}
 color: white;
@@ -184,8 +185,9 @@ color: black;
 {% endif %}
 }
 {% endif %}
+
 /*{{ color.name }}-{{ type.name }}*/
-.tn-element-color-{{ color.name }}-{{ type.name }} {
+.tn-element-color-{{ pallet.name }}-{{ color.name }}-{{ type.name }} {
 background-color: {{ type.value }};
 {% if type.dark %}
 color: white;
@@ -193,7 +195,7 @@ color: white;
 color: black;
 {% endif %}
 }
-.tn-element-color-onhover-{{ color.name }}-{{ type.name }}:hover {
+.tn-element-color-onhover-{{ pallet.name }}-{{ color.name }}-{{ type.name }}:hover {
 background-color: {{ type.value }};
 {% if type.dark %}
 color: white;
@@ -210,15 +212,15 @@ color: black;
 .tn-text-color-{{ color.name }} {
 color: {{ color.value }};
 }
-.tn-text-color-onhover-{{ color.name }}:hover {
+.tn-text-color-onhover-{{ pallet.name }}-{{ color.name }}:hover {
 color: {{ color.value }};
 }
 {% endif %}
-/*{{ type.name }}*/
-.tn-text-color-{{ color.name }}-{{ type.name }} {
+/*{{ color.name }}-{{ type.name }}*/
+.tn-text-color-{{ pallet.name }}-{{ color.name }}-{{ type.name }} {
 color: {{ type.value }};
 }
-.tn-text-color-onhover-{{ color.name }}-{{ type.name }}:hover {
+.tn-text-color-onhover-{{ pallet.name }}-{{ color.name }}-{{ type.name }}:hover {
 color: {{ type.value }};
 }
 {% endfor %}
