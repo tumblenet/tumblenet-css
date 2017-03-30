@@ -35,6 +35,7 @@ color-pallets:
     css-name: dbw
     value: "#9E9E9E"
     dark: true
+
 - name: Red
   main: 4
   colors:
