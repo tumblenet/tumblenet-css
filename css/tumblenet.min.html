@@ -158,47 +158,72 @@ html.tn {
  }
 
 
-
-
 /*COLORS*/
- {% for colorG in site.data.css.colors %}
-/*{{ colorG.name }}*/
+{% for pallet in site.data.css.colors %}
+/*PALLET: {{ pallet.name }} */
+{% for color in pallete %}
+/*COLOR: {{ color.name }}*/
 /*-ELEMENT COLORING*/
- {% for color in colorG.colors %}
+{% for type in color.types %}
+{% if forloop.index0 == color.index %}
 /*{{ color.name }}*/
- .tn-element-color-{{ color.name }} {
- background-color: {{ color.value }};
+.tn-element-color-{{ color.name }} {
+background-color: {{ color.value }};
 {% if color.dark %}
- color: white;
+color: white;
 {% else %}
 color: black;
 {% endif %}
- }
- .tn-element-color-onhover-{{ color.name }}:hover {
- background-color: {{ color.value }};
-{% if color.dark %}
- color: white;
+}
+.tn-element-color-onhover-{{ color.name }}-{{ type.name }}:hover {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
 {% else %}
 color: black;
 {% endif %}
- }
-
- {% endfor %}
-
-/*-TEXT COLORING*/
-{% for color in colorG.colors %}
-/*{{ color.name }}*/
- .tn-text-color-{{ color.name }} {
- color: {{ color.value }};
- }
-.tn-text-color-onhover-{{ color.name }}:hover {
- color: {{ color.value }};
- }
-
- {% endfor %}
+}
+{% endif %}
+/*{{ color.name }}-{{ type.name }}*/
+.tn-element-color-{{ color.name }}-{{ type.name }} {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
+.tn-element-color-onhover-{{ color.name }}-{{ type.name }}:hover {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
 {% endfor %}
 
-
+/*-TEXT COLORING*/
+{% for types in color.types %}
+{% if forloop.index0 == color.index %}
+/*{{ color.name }}*/
+.tn-text-color-{{ color.name }} {
+color: {{ color.value }};
+}
+.tn-text-color-onhover-{{ color.name }}:hover {
+color: {{ color.value }};
+}
+{% endif %}
+/*{{ type.name }}*/
+.tn-text-color-{{ color.name }}-{{ type.name }} {
+color: {{ type.value }};
+}
+.tn-text-color-onhover-{{ color.name }}-{{ type.name }}:hover {
+color: {{ type.value }};
+}
+{% endfor %}
+{% endfor %}
+{% endfor %}
 
 .tn-header * {
 padding: 0;
