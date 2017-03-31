@@ -8,12 +8,12 @@ install:
  #- gem install bundler -v "=1.10.6"
 
 before_script:
-  - composer self-update -q
-  - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
-  - if [ -z "$dependencies" ]; then composer install; fi;
-  - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest -n; fi;
-  - if [ "$dependencies" = "highest" ]; then composer update -n; fi;
-  - composer show -i
+ - composer self-update -q
+ - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com ${GH_TOKEN}; fi;
+ - if [ -z "$dependencies" ]; then composer install; fi;
+ - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest -n; fi;
+ - if [ "$dependencies" = "highest" ]; then composer update -n; fi;
+ - composer show -i
  - ssh -vT git@github.com
  - ssh -T git@github.com
  - chmod +x ./script/cibuild # or do this locally and commit
