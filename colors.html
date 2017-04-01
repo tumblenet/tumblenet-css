@@ -1,0 +1,24 @@
+---
+layout: page
+title: Colors Test
+---
+{% for pallete in site.data.css.color-palletes %}
+<h1>{{ pallete.name }}</h1>
+<div class="tn-row">
+  {% for color in pallete.colors %}
+  <div class="tn-col-1-3">
+    <div>
+      <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}">
+        <h2>{{ color.name }}</h2>
+        <p>{{ pallete.css-name }}-{{ color.css-name }} : {{ color.value }}</p>
+      </div>
+      {% for type in color.types %}
+      <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}">
+        <p>{{ color.css-name }}-{{ type.name }} : {{ type.value }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}

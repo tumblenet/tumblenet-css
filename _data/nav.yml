@@ -2,10 +2,12 @@
 - name: Home
   href: "/"
 - name: Grid Test
-  href: "/grid-test/"
+  href: "/grid/"
 - name: Align Test
-  href: "/align-test/"
+  href: "/align/"
 - name: Colors Test
-  href: "/colors-test/"
+  href: "/colors/"
 - name: Hiding Test
-  href: "/hiding-test/"
+  href: "/hiding/"
+- name: Tables
+  href: "/tables/"
