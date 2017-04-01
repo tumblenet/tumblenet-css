@@ -4,7 +4,7 @@ max:
   width: 100
   z: 100
   col: 12
-colors:
+palletes:
 - name: Nice colour
   main: ''
   colors:
