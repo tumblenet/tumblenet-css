@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-#echo "JEKYLL BUILD"
-#bundle exec jekyll build
+echo "JEKYLL BUILD"
+bundle exec jekyll build
 
-#echo ""
-#echo "HTML PROOFER"
-#bundle exec htmlproofer ./_site --disable-external
-
-git remote add public-beta git@github.com:tumblenet/tumblenet-css-public-beta.git
-git push public-beta gh-pages
+echo ""
+echo "HTML PROOFER"
+bundle exec htmlproofer ./_site --disable-external
