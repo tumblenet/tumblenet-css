@@ -4,367 +4,383 @@ max:
   width: 100
   z: 100
   col: 12
-colors:
-- name: Nice colour
-  main: ''
+
+
+
+color-palletes:
+- name: "DBW picks"
+  css-name: dbwPicks
   colors:
-  - name: nice
+  - name: "Nice colour"
+    css-name: nice
     value: "#020305"
     dark: true
-- name: Tumble Network
-  main: 0
+
+
+- name: "Tumble Network"
+  css-name: tn
   colors:
-  - name: tumblenet
+  - name: "Tumble Network"
+    css-name: tumblenet
     value: "#F44336"
     dark: true
-  - name: tumblegamer
+  - name: "TumbleGamer"
+    css-name: tumblegamer
     value: "#FFC107"
-  - name: tumblenethelp
+  - name: "TumbleNet Help"
+    css-name: tumblenethelp
     value: "#03A9F4"
     dark: true
-  - name: dbw
+  - name: "Doctor Batman Who"
+    css-name: dbw
     value: "#9E9E9E"
     dark: true
-- name: Red
-  main: 4
+- name: "Main"
+  css-name: "main"
   colors:
-  - name: red-dark4
-    value: "#BA160A"
-    dark: true
-  - name: red-dark3
-    value: "#D2190B"
-    dark: true
-  - name: red-dark2
-    value: "#EA1C0D"
-    dark: true
-  - name: red-dark1
-    value: "#f32c1e"
-    dark: true
-  - name: red
+  - name: Red
+    css-name: red
     value: "#F44336"
     dark: true
-  - name: red-light1
-    value: "#f55a4e"
-    dark: true
-  - name: red-light2
-    value: "#f77066"
-    dark: true
-  - name: red-light3
-    value: "#F8877f"
-  - name: red-light4
-    value: "#F99d97"
-- name: Orange
-  main: 4
-  colors:
-  - name: orange-dark4
-    value: "#BA6E0A"
-    dark: true
-  - name: orange-dark3
-    value: "#D27C0B"
-    dark: true
-  - name: orange-dark2
-    value: "#EA8B0D"
-  - name: orange-dark1
-    value: "#F3971E"
-  - name: orange
+    index: 4
+    types:
+    - name: dark4
+      value: "#BA160A"
+      dark: true
+    - name: dark3
+      value: "#D2190B"
+      dark: true
+    - name: dark2
+      value: "#EA1C0D"
+      dark: true
+    - name: dark1
+      value: "#f32c1e"
+      dark: true
+    - name: light1
+      value: "#f55a4e"
+      dark: true
+    - name: light2
+      value: "#f77066"
+      dark: true
+    - name: light3
+      value: "#F8877f"
+    - name: light4
+      value: "#F99d97"
+  - name: Orange
+    css-name: orange
     value: "#F4A236"
-  - name: orange-light1
-    value: "#F5AD4E"
-  - name: orange-light2
-    value: "#F7B866"
-  - name: orange-light3
-    value: "#F8C47F"
-  - name: orange-light4
-    value: "#F9CF97"
-- name: Yellow
-  main: 4
-  colors:
-  - name: yellow-dark4
-    value: "#AEBA0A"
-  - name: yellow-dark3
-    value: "#C4D20B"
-  - name: yellow-dark2
-    value: "#DBEA0D"
-  - name: yellow-dark1
-    value: "#e4f31e"
-  - name: yellow
+    index: 4
+    types:
+    - name: dark4
+      value: "#BA6E0A"
+      dark: true
+    - name: dark3
+      value: "#D27C0B"
+      dark: true
+    - name: dark2
+      value: "#EA8B0D"
+    - name: dark1
+      value: "#F3971E"
+    - name: light1
+      value: "#F5AD4E"
+    - name: light2
+      value: "#F7B866"
+    - name: light3
+      value: "#F8C47F"
+    - name: light4
+      value: "#F9CF97"
+  - name: Yellow
+    css-name: yellow
     value: "#E7F436"
-  - name: yellow-light1
-    value: "#Eaf54e"
-  - name: yellow-light2
-    value: "#edf766"
-  - name: yellow-light3
-    value: "#f0f87f"
-  - name: yellow-light4
-    value: "#f3f997"
-- name: Lime
-  main: 4
-  colors:
-  - name: lime-dark4
-    value: "#56ba0a"
-  - name: lime-dark3
-    value: "#61d20b"
-  - name: lime-dark2
-    value: "#6cea0d"
-  - name: lime-dark1
-    value: "#7af31e"
-  - name: lime
+    index: 4
+    types:
+    - name: dark4
+      value: "#AEBA0A"
+    - name: dark3
+      value: "#C4D20B"
+    - name: dark2
+      value: "#DBEA0D"
+    - name: dark1
+      value: "#e4f31e"
+    - name: light1
+      value: "#Eaf54e"
+    - name: light2
+      value: "#edf766"
+    - name: light3
+      value: "#f0f87f"
+    - name: light4
+      value: "#f3f997"
+  - name: Lime
+    css-name: lime
     value: "#88f436"
-  - name: lime-light1
-    value: "#96f54e"
-  - name: lime-light2
-    value: "#a5f766"
-  - name: lime-light3
-    value: "#b3f87f"
-  - name: lime-light4
-    value: "#c1f997"
-- name: Green
-  main: 4
-  colors:
-  - name: green-dark4
-    value: "#0aba16"
-    dark: true
-  - name: green-dark3
-    value: "#0bd219"
-  - name: green-dark2
-    value: "#0dea1c"
-  - name: green-dark1
-    value: "#1ef32c"
-  - name: green
+    index: 4
+    types:
+    - name: dark4
+      value: "#56ba0a"
+    - name: dark3
+      value: "#61d20b"
+    - name: dark2
+      value: "#6cea0d"
+    - name: dark1
+      value: "#7af31e"
+    - name: light1
+      value: "#96f54e"
+    - name: light2
+      value: "#a5f766"
+    - name: light3
+      value: "#b3f87f"
+    - name: light4
+      value: "#c1f997"
+  - name: Green
+    css-name: green
     value: "#36f443"
-  - name: green-light1
-    value: "#4ef55a"
-  - name: green-light2
-    value: "#66f770"
-  - name: green-light3
-    value: "#7ff887"
-  - name: green-light4
-    value: "#97f99d"
-- name: SpringGreen
-  main: 4
-  colors:
-  - name: springGreen-dark4
-    value: "#0aba6e"
-    dark: true
-  - name: springGreen-dark3
-    value: "#0bd27c"
-  - name: springGreen-dark2
-    value: "#0dea8b"
-  - name: springGreen-dark1
-    value: "#1ef397"
-  - name: springGreen
+    index: 4
+    types:
+    - name: dark4
+      value: "#0aba16"
+      dark: true
+    - name: dark3
+      value: "#0bd219"
+    - name: dark2
+      value: "#0dea1c"
+    - name: dark1
+      value: "#1ef32c"
+    - name: light1
+      value: "#4ef55a"
+    - name: light2
+      value: "#66f770"
+    - name: light3
+      value: "#7ff887"
+    - name: light4
+      value: "#97f99d"
+  - name: "Spring Green"
+    css-name: springGreen
     value: "#36f4a2"
     dark: false
-  - name: springGreen-light1
-    value: "#4ef5ad"
-    dark: false
-  - name: springGreen-light2
-    value: "#66f7b8"
-    dark: false
-  - name: springGreen-light3
-    value: "#7ff8c4"
-    dark: false
-  - name: springGreen-light4
-    value: "#97f9cf"
-    dark: false
-- name: Cyan
-  main: 4
-  colors:
-  - name: cyan-dark4
-    value: "#0aaeba"
-    dark: true
-  - name: cyan-dark3
-    value: "#0bc4d2"
-  - name: cyan-dark2
-    value: "#0ddbea"
-  - name: cyan-dark1
-    value: "#1ee4f3"
-  - name: cyan
+    index: 4
+    types:
+    - name: dark4
+      value: "#0aba6e"
+      dark: true
+    - name: dark3
+      value: "#0bd27c"
+    - name: dark2
+      value: "#0dea8b"
+    - name: dark1
+      value: "#1ef397"
+    - name: light1
+      value: "#4ef5ad"
+      dark: false
+    - name: light2
+      value: "#66f7b8"
+      dark: false
+    - name: light3
+      value: "#7ff8c4"
+      dark: false
+    - name: light4
+      value: "#97f9cf"
+      dark: false
+  - name: Cyan
+    index: 4
+    css-name: cyan
     value: "#36e7f4"
-  - name: cyan-light1
-    value: "#4eeaf5"
-  - name: cyan-light2
-    value: "#66edf7"
-  - name: cyan-light3
-    value: "#7ff0f8"
-  - name: cyan-light4
-    value: "#97f3f9"
-- name: Azure
-  main: 4
-  colors:
-  - name: azure-dark4
-    value: "#0a56ba"
-    dark: true
-  - name: azure-dark3
-    value: "#0b61d2"
-    dark: true
-  - name: azure-dark2
-    value: "#0d6cea"
-    dark: true
-  - name: azure-dark1
-    value: "#1e7af3"
-    dark: true
-  - name: azure
+    types:
+    - name: dark4
+      value: "#0aaeba"
+      dark: true
+    - name: dark3
+      value: "#0bc4d2"
+    - name: dark2
+      value: "#0ddbea"
+    - name: dark1
+      value: "#1ee4f3"
+    - name: light1
+      value: "#4eeaf5"
+    - name: light2
+      value: "#66edf7"
+    - name: light3
+      value: "#7ff0f8"
+    - name: light4
+      value: "#97f3f9"
+  - name: Azure
+    css-name: azure
     value: "#3688f4"
     dark: true
-  - name: azure-light1
-    value: "#4e96f5"
-    dark: true
-  - name: azure-light2
-    value: "#66a5f7"
-  - name: azure-light3
-    value: "#7fb3f8"
-  - name: azure-light4
-    value: "#97c1f9"
-- name: Blue
-  main: 4
-  colors:
-  - name: blue-dark4
-    value: "#160aba"
-    dark: true
-  - name: blue-dark3
-    value: "#190bd2"
-    dark: true
-  - name: blue-dark2
-    value: "#1c0dea"
-    dark: true
-  - name: blue-dark1
-    value: "#2c1ef3"
-    dark: true
-  - name: blue
+    index: 4
+    types:
+    - name: dark4
+      value: "#0a56ba"
+      dark: true
+    - name: dark3
+      value: "#0b61d2"
+      dark: true
+    - name: dark2
+      value: "#0d6cea"
+      dark: true
+    - name: dark1
+      value: "#1e7af3"
+      dark: true
+    - name: light1
+      value: "#4e96f5"
+      dark: true
+    - name: light2
+      value: "#66a5f7"
+    - name: light3
+      value: "#7fb3f8"
+    - name: light4
+      value: "#97c1f9"
+  - name: Blue
+    css-name: blue
     value: "#4336f4"
     dark: true
-  - name: blue-light1
-    value: "#5a4ef5"
-    dark: true
-  - name: blue-light2
-    value: "#7066f7"
-    dark: true
-  - name: blue-light3
-    value: "#877ff8"
-    dark: true
-  - name: blue-light4
-    value: "#9d97f9"
-- name: Purple
-  main: 4
-  colors:
-  - name: purple-dark4
-    value: "#6e0aba"
-    dark: true
-  - name: purple-dark3
-    value: "#7c0bd2"
-    dark: true
-  - name: purple-dark2
-    value: "#8b0dea"
-    dark: true
-  - name: purple-dark1
-    value: "#971ef3"
-    dark: true
-  - name: purple
+    index: 4
+    types:
+    - name: dark4
+      value: "#160aba"
+      dark: true
+    - name: dark3
+      value: "#190bd2"
+      dark: true
+    - name: dark2
+      value: "#1c0dea"
+      dark: true
+    - name: dark1
+      value: "#2c1ef3"
+      dark: true
+    - name: light1
+      value: "#5a4ef5"
+      dark: true
+    - name: light2
+      value: "#7066f7"
+      dark: true
+    - name: light3
+      value: "#877ff8"
+      dark: true
+    - name: light4
+      value: "#9d97f9"
+  - name: Purple
+    css-name: purple
     value: "#a236f4"
     dark: true
-  - name: purple-light1
-    value: "#ad4ef5"
-    dark: true
-  - name: purple-light2
-    value: "#b866f7"
-    dark: true
-  - name: purple-light3
-    value: "#c47ff8"
-  - name: purple-light4
-    value: "#cf97f9"
-- name: Pink
-  main: 4
-  colors:
-  - name: pink-dark4
-    value: "#ba0aae"
-    dark: true
-  - name: pink-dark3
-    value: "#d20bc4"
-    dark: true
-  - name: pink-dark2
-    value: "#ea0ddb"
-    dark: true
-  - name: pink-dark1
-    value: "#f31ee4"
-    dark: true
-  - name: pink
+    index: 4
+    types:
+    - name: dark4
+      value: "#6e0aba"
+      dark: true
+    - name: dark3
+      value: "#7c0bd2"
+      dark: true
+    - name: dark2
+      value: "#8b0dea"
+      dark: true
+    - name: dark1
+      value: "#971ef3"
+      dark: true
+    - name: light1
+      value: "#ad4ef5"
+      dark: true
+    - name: light2
+      value: "#b866f7"
+      dark: true
+    - name: light3
+      value: "#c47ff8"
+    - name: light4
+      value: "#cf97f9"
+  - name: Pink
+    css-name: pink
     value: "#f436e7"
     dark: true
-  - name: pink-light1
-    value: "#f54eea"
-    dark: true
-  - name: pink-light2
-    value: "#f766ed"
-    dark: true
-  - name: pink-light3
-    value: "#f87ff0"
-    dark: false
-  - name: pink-light4
-    value: "#f997f3"
-    dark: false
-- name: Magenta
-  main: 4
-  colors:
-  - name: magenta-dark4
-    value: "#ba0a56"
-    dark: true
-  - name: magenta-dark3
-    value: "#d20b61"
-    dark: true
-  - name: magenta-dark2
-    value: "#ea0d6c"
-    dark: true
-  - name: magenta-dark1
-    value: "#f31e7a"
-    dark: true
-  - name: magenta
+    index: 4
+    types:
+    - name: dark4
+      value: "#ba0aae"
+      dark: true
+    - name: dark3
+      value: "#d20bc4"
+      dark: true
+    - name: dark2
+      value: "#ea0ddb"
+      dark: true
+    - name: dark1
+      value: "#f31ee4"
+      dark: true
+    - name: light1
+      value: "#f54eea"
+      dark: true
+    - name: light2
+      value: "#f766ed"
+      dark: true
+    - name: light3
+      value: "#f87ff0"
+      dark: false
+    - name: light4
+      value: "#f997f3"
+      dark: false
+  - name: Magenta
+    css-name: magenta
     value: "#f33688"
     dark: true
-  - name: magenta-light1
-    value: "#f54e96"
-    dark: true
-  - name: magenta-light2
-    value: "#f766a5"
-    dark: true
-  - name: magenta-light3
-    value: "#f87fb3"
-    dark: false
-  - name: magenta-light4
-    value: "#f997c1"
-    dark: false
-- name: Grey
-  colors:
-  - name: black
-    value: black
-    dark: true
-  - name: grey-dark4
-    value: "#1a1a1a"
-    dark: true
-  - name: grey-dark3
-    value: "#333333"
-    dark: true
-  - name: grey-dark2
-    value: "#4c4c4c"
-    dark: true
-  - name: grey-dark1
-    value: "#666666"
-    dark: true
-  - name: grey
+    index: 4
+    types:
+    - name: dark4
+      value: "#ba0a56"
+      dark: true
+    - name: dark3
+      value: "#d20b61"
+      dark: true
+    - name: dark2
+      value: "#ea0d6c"
+      dark: true
+    - name: dark1
+      value: "#f31e7a"
+      dark: true
+    - name: light1
+      value: "#f54e96"
+      dark: true
+    - name: light2
+      value: "#f766a5"
+      dark: true
+    - name: light3
+      value: "#f87fb3"
+      dark: false
+    - name: light4
+      value: "#f997c1"
+      dark: false
+  - name: Grey
+    css-name: grey
     value: "#808080"
     dark: true
-  - name: grey-light1
-    value: "#999999"
+    index: 4
+    types:
+    - name: dark4
+      value: "#1a1a1a"
+      dark: true
+    - name: dark3
+      value: "#333333"
+      dark: true
+    - name: dark2
+      value: "#4c4c4c"
+      dark: true
+    - name: dark1
+      value: "#666666"
+      dark: true
+    - name: light1
+      value: "#999999"
+      dark: false
+    - name: light2
+      value: "#b2b2b2"
+      dark: false
+    - name: light3
+      value: "#cccccc"
+      dark: false
+    - name: light4
+      value: "#e6e6e6"
+      dark: false
+  - name: "White"
+    css-name: white
+    value: "white"
     dark: false
-  - name: grey-light2
-    value: "#b2b2b2"
-    dark: false
-  - name: grey-light3
-    value: "#cccccc"
-    dark: false
-  - name: grey-light4
-    value: "#e6e6e6"
-    dark: false
-  - name: white
-    value: white
-  main: 5
+  - name: "Black"
+    css-name: "black"
+    value: "black"
+    dark: true
