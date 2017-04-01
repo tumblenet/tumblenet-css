@@ -8,12 +8,6 @@ install:
  #- gem install bundler -v "=1.10.6"
 
 before_script:
- - git config --global user.email "tumble-bot@tumblenet.cu.cc"
- - git config --global user.name "Travis-CI"
- - git config credential.helper "store --file=.git/credentials"
- - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
- - ssh -vT git@github.com
- - ssh -T git@github.com
  - chmod +x ./script/cibuild # or do this locally and commit
 
 # Assume bundler is being used, therefore
@@ -21,9 +15,9 @@ before_script:
 script: ./script/cibuild
 
 # branch whitelist, only for GitHub Pages
-branches:
-  only:
-  - gh-pages     # test the gh-pages branch
+#branches:
+#  only:
+#  - gh-pages     # test the gh-pages branch
 #  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
