@@ -53,6 +53,10 @@ max-width: 900px;
 ################################*/
 
 /*TABLES*/
+  .tn thead {
+    border-bottom: 1px solid #cccccc;
+  }
+
   .tn table {
     border-collapse: collapse;
     width: 100%;
@@ -63,8 +67,15 @@ max-width: 900px;
     padding: 8px;
   }
 
-  .tn tbody tr:nth-child(even){background-color: #cccccc}
-  .tn tbody tr:nth-child(odd){background-color: #e6e6e6}
+  .tn table.tn-table-bordered>tbody>tr{
+    border-bottom: 1px solid #cccccc;
+  }
+  .tn table.tn-table-striped>tbody>tr:nth-child(even) {
+    background-color: #e6e6e6;
+  }
+  .tn table.tn-table-highlight>tbody>tr:hover {
+    background-color: #e6e6e6;
+  }
 
   /*##############################
   ################################*/
@@ -106,7 +117,7 @@ max-width: 900px;
       flex-grow: 10;
   }
 
-/* MOBILE*/
+/*MOBILE*/
   [class*="tn-col"] {
       width: 100%;
   }
@@ -368,14 +379,13 @@ max-width: 900px;
 
   .tn-page-header {
     font-size: 1.225em;
-    padding: 15px;
-    margin-bottom: 15px; 
   }
 
   .tn-separator {
     height: 1px;
     background: #717171;
     border-bottom: 1px solid #313030;
+    margin: 15px 0;
   }
 
   .tn-page-body h1, .tn-page-body h2, .tn-page-body h3, .tn-page-body h4, .tn-page-body h5 {

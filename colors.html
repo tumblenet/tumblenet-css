@@ -10,11 +10,11 @@ title: Colors
     <div>
       <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}">
         <h2>{{ color.name }}</h2>
-        <p>{{ pallete.css-name }}-{{ color.css-name }} : {{ color.value }}</p>
+        <p><a href="full-screen?color={{ pallete.css-name }}-{{ color.css-name }}">{{ pallete.css-name }}-{{ color.css-name }} : {{ color.value }}</a></p>
       </div>
       {% for type in color.types %}
       <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}">
-        <p>{{ color.css-name }}-{{ type.name }} : {{ type.value }}</p>
+        <p><a href="full-screen?color={{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }} ">{{ color.css-name }}-{{ type.name }} : {{ type.value }}</a></p>
       </div>
       {% endfor %}
     </div>
