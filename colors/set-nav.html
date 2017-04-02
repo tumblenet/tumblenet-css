@@ -2,25 +2,8 @@
 layout: page
 title: Colors
 ---
-<a href="{{ site.url }}/colors" class="tn-button tn-element-color-main-red tn-element-color-onhover-main-red-dark3">Fullscreen color</a> <a href="" class="tn-button tn-element-color-main-grey tn-element-color-onhover-main-grey-dark3"></a>
-<script type="text/javascript">
-$(function() {
-  var color = getQueryVariable("color");
-  $('body').attr("class", "tn-element-color-" + color);
-});
-function getQueryVariable(variable) {
-   var query = window.location.search.substring(1);
-   var vars = query.split('&');
+<a href="{{ site.url }}/colors" class="tn-button tn-element-color-main-red tn-element-color-onhover-main-red-dark3">Fullscreen color</a> <a href="#" class="tn-button tn-element-color-main-grey tn-element-color-onhover-main-grey-dark3">Set Nav Color</a>
 
-   for (var i = 0; i < vars.length; i++) {
-     var pair = vars[i].split('=');
-
-     if (pair[0] === variable) {
-       return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-     }
-   }
- }
-</script>
 {% for pallete in site.data.css.color-palletes %}
 <h1>{{ pallete.name }}</h1>
 <div class="tn-row">
@@ -29,11 +12,11 @@ function getQueryVariable(variable) {
     <div>
       <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}">
         <h2>{{ color.name }}</h2>
-        <p><a href="?color={{ pallete.css-name }}-{{ color.css-name }}">{{ pallete.css-name }}-{{ color.css-name }} : {{ color.value }}</a></p>
+        <p><a href="javascript:$('body').attr("class", "tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}");">{{ pallete.css-name }}-{{ color.css-name }} : {{ color.value }}</a></p>
       </div>
       {% for type in color.types %}
       <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}">
-        <p><a href="?color={{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}">{{ color.css-name }}-{{ type.name }} : {{ type.value }}</a></p>
+        <p><a href="javascript:$('body').attr("class", "tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}");">{{ color.css-name }}-{{ type.name }} : {{ type.value }}</a></p>
       </div>
       {% endfor %}
     </div>
