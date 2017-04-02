@@ -13,7 +13,9 @@
   <script type="text/javascript">
   $(function() {
     var color = getQueryVariable("color");
-    $('body').attr("class", "tn-element-color-" + color);
+    if(color !== undefined) {
+      $('body').attr("class", "tn-element-color-" + color);
+    }
   });
   function getQueryVariable(variable) {
      var query = window.location.search.substring(1);
