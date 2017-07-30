@@ -19,11 +19,11 @@ colors:
     dark: true
   - name: tumblegamer
     value: "#FFC107"
-  - name: tumblenethelp
-    value: "#03A9F4"
-    dark: true
   - name: dbw
-    value: "#9E9E9E"
+    value: "#8307ff"
+    dark: true
+  - name: tumblenethelp
+    value: "#36f468"
     dark: true
 - name: Red
   main: 4
