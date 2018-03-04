@@ -5,8 +5,6 @@ max:
   z: 100
   col: 12
 
-
-
 color-palletes:
 - name: "DBW picks"
   css-name: dbwPicks
