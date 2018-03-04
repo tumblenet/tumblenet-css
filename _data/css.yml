@@ -27,11 +27,11 @@ color-palletes:
     value: "#FFC107"
   - name: "TumbleNet Help"
     css-name: tumblenethelp
-    value: "#03A9F4"
-    dark: true
+    value: "#36f443"
+    dark: false
   - name: "Doctor Batman Who"
     css-name: dbw
-    value: "#9E9E9E"
+    value: "#003EF8"
     dark: true
 - name: "Main"
   css-name: "main"
