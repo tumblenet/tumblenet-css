@@ -3,18 +3,18 @@ layout: default
 ---
 <header class="tn-header">
   <div class="tn-row tn-container">
-    <h1 class="tn-col-1-3 tn-website-title tn-text-color-white">{{ site.title }}</h1>
+    <h1 class="tn-col-1-3 tn-website-title tn-text-color-main-white">{{ site.title }}</h1>
     <nav class="tn-col-2-3">
       <ul class="tn-nav">
         {% for item in site.data.nav %}
-        <li class="tn-nav-item"><a class="tn-element-color-onhover-red-dark3{% if page.url == item.href %} tn-element-color-red-dark3{% endif %}" href="{{ site.url }}{{ item.href }}">{{ item.name }}</a></li>
+        <li class="tn-nav-item"><a class="tn-element-color-onhover-main-red-dark3{% if page.url == item.href %} tn-element-color-main-red-dark3{% endif %}" href="{{ site.url }}{{ item.href }}">{{ item.name }}</a></li>
         {% endfor %}
       </ul>
     </nav>
   </div>
 </header>
-<main class="tn-element-color-grey-light4 tn-main">
-    PAGE.URL:{{ page.url }}
+<main class="tn-element-color-main-grey-light4 tn-main">
+    <p>PAGE.URL:{{ page.url }}</p>
 {{ content }}
 </main>
 <footer class="tn-footer">

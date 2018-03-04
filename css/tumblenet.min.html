@@ -2,14 +2,14 @@
 permalink: /css/tumblenet.min.css
 ---
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto');
-* {
+.tn * {
 margin: 0;
-padding: 0; 
+padding: 0;
 color: inherit;
 }
- *,
- *:before,
- *:after {
+ .tn *,
+ .tn *:before,
+ .tn *:after {
    -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,17 +22,16 @@ color: inherit;
 
 
 
-html {
+html.tn {
   box-sizing: border-box;
 
 }
-html, body {
+html.tn, .tn body {
   height: 100%;
    display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 .tn-main {
 flex: 1;
@@ -74,7 +73,7 @@ max-width: 900px;
       text-align: center;
  }
 
-.tn-row:before, 
+.tn-row:before,
     .tn-row:after {
         content:"";
         display: table ;
@@ -145,61 +144,130 @@ max-width: 900px;
 
 
 /*global*/
-html {
+html.tn {
  font-family: 'Roboto', sans-serif;
  }
- 
- h1,h2,h3,h4,h5,h6,h7,h8,h9 {
+
+ .tn h1,.tn h2,.tn h3,.tn h4,.tn h5,.tn h6,.tn h7,.tn h8,.tn h9 {
  font-family: 'Oswald', sans-serif;
  }
- 
-img {
+
+.tn img {
      max-width: 100%;
      height: auto;
  }
- 
-
 
 
 /*COLORS*/
- {% for colorG in site.data.css.colors %}
-/*{{ colorG.name }}*/
-/*-ELEMENT COLORING*/
- {% for color in colorG.colors %}
-/*{{ color.name }}*/
- .tn-element-color-{{ color.name }} {
- background-color: {{ color.value }};
+{% for pallete in site.data.css.color-palletes %}
+/*PALLETE: {{ pallete.name }} */
+{% for color in pallete.colors %}
+/*COLOR: {{ color.name }}*/
+/*ELEMENT COLORING*/
+{% for type in color.types %}
+{% assign index = color.index | default: 0 %}
+{% if forloop.index0 == index %}
+/*{{ color.css-name }}*/
+.tn-element-color-{{ pallete.css-name }}-{{ color.css-name }} {
+background-color: {{ color.value }};
 {% if color.dark %}
- color: white;
+color: white;
 {% else %}
 color: black;
 {% endif %}
- }
- .tn-element-color-onhover-{{ color.name }}:hover {
- background-color: {{ color.value }};
-{% if color.dark %}
- color: white;
+}
+.tn-element-color-onhover-{{ pallete.css-name }}-{{ color.css-name }}:hover {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
 {% else %}
 color: black;
 {% endif %}
- }
+}
+{% endif %}
 
- {% endfor %}
-
-/*-TEXT COLORING*/
-{% for color in colorG.colors %}
-/*{{ color.name }}*/
- .tn-text-color-{{ color.name }} {
- color: {{ color.value }};
- }
-.tn-text-color-onhover-{{ color.name }}:hover {
- color: {{ color.value }};
- }
-
- {% endfor %}
+/*{{ color.css-name }}-{{ type.name }}*/
+.tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }} {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
+.tn-element-color-onhover-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}:hover {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
+{% else %}
+/*{{ color.css-name }}*/
+.tn-element-color-{{ pallete.css-name }}-{{ color.css-name }} {
+background-color: {{ color.value }};
+{% if color.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
+.tn-element-color-onhover-{{ pallete.css-name }}-{{ color.css-name }}:hover {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
 {% endfor %}
 
+/*-TEXT COLORING*/
+{% for types in color.types %}
+{% assign index = color.index | default: 0 %}
+{% if forloop.index0 == index %}
+/*{{ color.name }}*/
+.tn-text-color-{{ color.name }} {
+color: {{ color.value }};
+}
+.tn-text-color-onhover-{{ pallete.name }}-{{ color.name }}:hover {
+color: {{ color.value }};
+}
+{% endif %}
+/*{{ color.name }}-{{ type.name }}*/
+.tn-text-color-{{ pallete.name }}-{{ color.name }}-{{ type.name }} {
+color: {{ type.value }};
+}
+.tn-text-color-onhover-{{ pallete.name }}-{{ color.name }}-{{ type.name }}:hover {
+color: {{ type.value }};
+}
+{% else %}
+/*{{ color.css-name }}*/
+.tn-element-color-{{ pallete.css-name }}-{{ color.css-name }} {
+background-color: {{ color.value }};
+{% if color.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
+.tn-element-color-onhover-{{ pallete.css-name }}-{{ color.css-name }}:hover {
+background-color: {{ type.value }};
+{% if type.dark %}
+color: white;
+{% else %}
+color: black;
+{% endif %}
+}
+{% endfor %}
 
+{% else %}
+/*no colors*/
+{% endfor %}
+{% else %}
+/*no pallets*/
+{% endfor %}
 
 .tn-header * {
 padding: 0;
@@ -293,17 +361,24 @@ float: none;' %};
 
 
 
-
 /* PAGE RULES */
 .tn-page {
-    margin: 25px;
+    margin: 25px 0;
+    padding: 25px;
 }
 
 .tn-page-header {
+  font-size: 1.225em;
     padding: 15px;
 }
 .tn-separator {
-height:1px;
-background:#717171;
-border-bottom:1px solid #313030;
+height: 1px;
+background: #717171;
+border-bottom: 1px solid #313030;
+}
+
+.tn-page-body h1, .tn-page-body h2, .tn-page-body h3, .tn-page-body h4, .tn-page-body h5 {
+  padding-top: 25px;
+padding-bottom: 5px;
+border-bottom: 1px solid #313030;
 }

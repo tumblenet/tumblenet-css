@@ -3,24 +3,24 @@ layout: page
 title: Grid Test
 ---
 
-
+<h2>Main Grid sizes</h2>
   {% for i in (1..site.data.css.max.col) %}
 <div class="tn-row">
   {% for j in (1..i) %}
   <div class="tn-col-1-{{i}}">
-    <p class="tn-element-color-tumblenet tn-text-color-white">1-{{i}}</p>
+    <p class="tn-element-color-main-red tn-text-color-main-white">1-{{i}}</p>
   </div>
   {% endfor %}
 </div>
   {% endfor %}
 
-
+<h2>All Grid sizes</h2>
 {% for a in (1..site.data.css.max.col) %}
 <div class="tn-row">
 {% for b in (1..site.data.css.max.col) %}
 {% unless b>a %}
   <div class="tn-col-{{b}}-{{a}}">
-    <p class="tn-element-color-tumblenet tn-text-color-white">{{b}}-{{a}}</p>
+    <p class="tn-element-color-main-red tn-text-color-main-white">{{b}}-{{a}}</p>
   </div>
 {% endunless %}
 {% endfor %}
