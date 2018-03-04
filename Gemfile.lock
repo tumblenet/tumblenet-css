@@ -235,6 +235,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  nokogiri (~> 1.8.1)
   wdm (~> 0.1.0)
 
 RUBY VERSION
