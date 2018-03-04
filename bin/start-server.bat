@@ -1,5 +1,6 @@
 @echo off
-cd ..
+title Web Server
+cd..
 :start
 bundle exec jekyll s
-goto start
+goto :start
