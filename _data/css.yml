@@ -13,8 +13,6 @@ color-palletes:
     css-name: nice
     value: "#020305"
     dark: true
-
-
 - name: "Tumble Network"
   css-name: tn
   colors:
