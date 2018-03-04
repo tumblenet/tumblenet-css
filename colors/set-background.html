@@ -1,0 +1,30 @@
+---
+layout: page
+title: Colors
+---
+<a href="{{ site.url }}/colors" class="tn-btn tn-element-color-main-red tn-element-color-onhover-main-red-dark3">Fullscreen color</a> <a href="#" class="tn-btn tn-element-color-main-grey tn-element-color-onhover-main-grey-dark3">Set Background Color</a>
+
+{% for pallete in site.data.css.color-palletes %}
+<h1>{{ pallete.name }}</h1>
+<div class="tn-row">
+  {% for color in pallete.colors %}
+  <div class="tn-col-1-3">
+    <div>
+      <a href="javascript:jQuery('body').attr('class','tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}');jQuery('main').attr('class','tn-main');">
+        <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}">
+          <h2>{{ color.name }}</h2>
+          <p>{{ pallete.css-name }}-{{ color.css-name }} : {{ color.value }}</a></p>
+        </div>
+      </a>
+      {% for type in color.types %}
+      <a href="javascript:jQuery('body').attr('class','tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}');jQuery('main').attr('class','tn-main');">
+        <div class="tn-row tn-element-color-{{ pallete.css-name }}-{{ color.css-name }}-{{ type.name }}">
+          <p>{{ color.css-name }}-{{ type.name }} : {{ type.value }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
