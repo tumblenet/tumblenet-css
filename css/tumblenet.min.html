@@ -6,7 +6,8 @@ permalink: /css/tumblenet.min.css
 margin: 0;
 padding: 0;
 color: inherit;
-text-align: inherit
+text-align: inherit;
+text-decoration: inherit;
 
 }
  .tn *,
@@ -37,6 +38,7 @@ html.tn, .tn body {
 
 .tn-main {
 flex: 1;
+overflow-y: scroll;
 }
 
 
@@ -53,6 +55,20 @@ max-width: 900px;
 }
 /*##############################
 ################################*/
+/*Text Deceration */
+
+.tn .tn-text-line-over {
+  text-decaration: overline;
+}
+.tn .tn-text-line-under {
+  text-decaration: underline;
+}
+.tn .tn-text-line-though {
+  text-decaration: line-through;
+}
+.tn .tn-text-line-none {
+  text-decaration: none;
+}
 
 /*TABLES*/
   .tn thead {
@@ -79,6 +95,21 @@ max-width: 900px;
     background-color: #e6e6e6;
   }
 
+/*BUTTONS*/
+  .tn [class*="tn-btn"] {
+    text-decoration: none;
+
+    padding: 10px;
+  }
+
+  .tn .tn-btn-disabled,.tn  .tn-btn[disabled] {
+    pointer-events: none;
+    background-color: #cccccc !important;
+    box-shadow: none;
+    color: #999999 !important;
+    cursor: default;
+}
+
   /*##############################
   ################################*/
 
@@ -88,7 +119,7 @@ max-width: 900px;
          float: left;
          min-height: 1px;
          padding: 12px;
-         text-align: center;           
+         text-align: center;
    }
 
   .tn-row:before,
