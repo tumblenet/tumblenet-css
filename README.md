@@ -1,7 +1,7 @@
 # tumblenet-css
 [![Build Status](https://travis-ci.org/tumblenet/tumblenet-css.svg?branch=master)](https://travis-ci.org/tumblenet/tumblenet-css)
 
-Development [![Build Status](https://travis-ci.org/tumblenet/tumblenet-css.svg?branch=dev)](https://travis-ci.org/tumblenet/tumblenet-css)
+Development [![Build Status](https://travis-ci.org/tumblenet/tumblenet-css.svg?branch=develop)](https://travis-ci.org/tumblenet/tumblenet-css)
 
 
 TODO: Write a project description
