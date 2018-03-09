@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: robots.txt
+permalink: robots.txt.txt
 ---
 # filter pages and documents for the noindex key
 {% assign noindexPages = site.pages | where: 'noindex', true %}
