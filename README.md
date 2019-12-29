@@ -7,7 +7,7 @@ Development [![Build Status](https://travis-ci.org/tumblenet/tumblenet-css.svg?b
 
 cdn:
 ```
-https://cdn.rawgit.com/tumblenet/tumblenet-css/master/css/tumblenet.min.css
+https://cdn.jsdelivr.net/gh/tumblenet/tumblenet-css@master/css/tumblenet.min.css
 ```
 TODO: Write a project description
 
